@@ -1,0 +1,25 @@
+[submodule "mctrl"]
+	path = mctrl
+	url = git@github.com:zynlyxkxy/mctrl.git
+	branch = develop
+[submodule "gui"]
+	path = gui
+	url = git@github.com:zynlyxkxy/gui.git
+	branch = develop
+[submodule "module/io"]
+	path = module/io
+	url = git@github.com:zynlyxkxy/io.git
+	branch = develop
+[submodule "module/motion"]
+	path = module/motion
+	url = git@github.com:zynlyxkxy/motion.git
+	branch = develop
+[submodule "module/re"]
+	path = module/re
+	url = git@github.com:zynlyxkxy/re.git
+	branch = develop
+
+[submodule "simulator"]
+	path = simulator
+	url = git@github.com:zynlyxkxy/simulator.git
+	branch = develop
