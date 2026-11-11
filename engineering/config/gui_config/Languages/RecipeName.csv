@@ -1,0 +1,160 @@
+key,English,中文
+bondArm_YN,bondArm_YN,邦定臂Y负
+bondArm_YP,bondArm_YP,邦定臂Y正
+Camera_XN_BondArm_YN_Head_XN_CamTakePhotoPos,Camera_XN_BondArm_YN_Head_XN_CamTakePhotoPos,相机XN邦定臂YN头XN拍照位置
+Camera_XN_BondArm_YP_Head_XN_CamTakePhotoPos,Camera_XN_BondArm_YP_Head_XN_CamTakePhotoPos,相机XN邦定臂YP头XN拍照位置
+Camera_XP_BondArm_YN_Head_XN_CamTakePhotoPos,Camera_XP_BondArm_YN_Head_XN_CamTakePhotoPos,相机XP邦定臂YN头XN拍照位置
+Camera_XP_BondArm_YP_Head_XN_CamTakePhotoPos,Camera_XP_BondArm_YP_Head_XN_CamTakePhotoPos,相机XP邦定臂YP头XN拍照位置
+ChipFineAlign_Camera_XN_dwCam2WinPos,ChipFineAlign_Camera_XN_dwCam2WinPos,芯片精对位相机XN到窗位置
+ChipFineAlign_RotationCenter,ChipFineAlign_RotationCenter,芯片精对位旋转中心
+ChipFineAlign_bondArm_YN_Head_XN_Pos,ChipFineAlign_bondArm_YN_Head_XN_Pos,芯片精对位邦定臂YN头XN位置
+CoarseCamera_HLeftDownWindow_Pos,CoarseCamera_HLeftDownWindow_Pos,粗相机水平左下窗位置
+CoarseCamera_HRightUpWindow_Pos,CoarseCamera_HRightUpWindow_Pos,粗相机水平右上窗位置
+CoarseCamera_VLeftDownWindow_Pos,CoarseCamera_VLeftDownWindow_Pos,粗相机垂直左下窗位置
+CoarseCamera_VRightUpWindow_Pos,CoarseCamera_VRightUpWindow_Pos,粗相机垂直右上窗位置
+DiverCycleTimes,DiverCycleTimes,分料循环次数
+EGA_SiliconStageCenterPos,EGA_SiliconStageCenterPos,EGA硅片台中心位置
+ES_BA_PhotoPos,ES_BA_PhotoPos,ES邦定头拍照位置
+ES_FA_CHipLeaveRelPos,ES_FA_CHipLeaveRelPos,ES精对位芯片离开相对位置
+ES_FA_PhotoPos,ES_FA_PhotoPos,ES精对位拍照位置
+ES_FA_PickChipPos,ES_FA_PickChipPos,ES精对位取芯片位置
+ES_GetChip_Buffer_Index,ES_GetChip_Buffer_Index,ES取芯片缓存序号
+FourDwWindowMark,FourDwWindowMark,四边窗标记
+FM_HandOverRepProcessTimes,FM_HandOverRepProcessTimes,FM交接重复次数
+InterferometerCloseLoop,InterferometerCloseLoop,干涉仪闭环
+InterferometerCloseLoopPositionError,InterferometerCloseLoopPositionError,干涉仪闭环位置误差
+InterferometerDownLimit,InterferometerDownLimit,干涉仪下限
+InterferometerUpLimit,InterferometerUpLimit,干涉仪上限
+LevelProcess_dwChipBestFocalValue,LevelProcess_dwChipBestFocalValue,测平芯片最佳焦距值
+LevelProcess_rxResultRange,LevelProcess_rxResultRange,测平Rx结果范围
+LevelProcess_ryResultRange,LevelProcess_ryResultRange,测平Ry结果范围
+STDPrecisionDetect_DwMarkTemplate,STDPrecisionDetect_DwMarkTemplate,标准精度检测下标记模板
+STDPrecisionDetect_UpMarkTemplate,STDPrecisionDetect_UpMarkTemplate,标准精度检测上标记模板
+Add,Add,新增
+Align,Align,对准
+Align Check Times:,Align Check Times:,核查对准次数:
+Align Points,Align Points,对准点位
+Align Settings,Align Settings,对准设置
+Auto Process Align Result:,Auto Process Align Result:,自动流程对准结果:
+Blue Film Wafer Info,Blue Film Wafer Info,蓝膜晶圆信息
+Bond Force,Bond Force,键合力
+Bond Head,Bond Head,键合头
+Bond Head Heating Selection,Bond Head Heating Selection,键合头加热选择
+Bond Initial Position,Bond Initial Position,键合初始位
+Bond Initial Position mm,Bond Initial Position mm,键合初始位 mm
+Bond Point Selection,Bond Point Selection,键合选点
+Bond Point Settings,Bond Point Settings,键合点位设置
+Bonding,Bonding,键合
+Bonding Process,Bonding Process,键合工序
+bump,bump,焊锡点高度
+Chip Center and Wafer Center Coincide,Chip Center and Wafer Center Coincide,芯片和晶圆中心重合
+Chip Corner and Wafer Center Coincide,Chip Corner and Wafer Center Coincide,芯片拐角和晶圆中心重合
+Chip Length:,Chip Length:,芯片长度:
+Chip Pitch (X):,Chip Pitch (X):,芯片间距（X方向）:
+Chip Pitch (Y):,Chip Pitch (Y):,芯片间距（Y方向）:
+Chip Recipe:,Chip Recipe:,芯片处方:
+Chip Thickness:,Chip Thickness:,芯片厚度:
+Chip Width:,Chip Width:,芯片宽度:
+Chuck Leveling,Chuck Leveling,吸盘调平
+Chuck Leveling Result Tolerance Range,Chuck Leveling Result Tolerance Range,吸盘调平结果公差范围
+Clear,Clear,清空
+Close,Close,关闭
+Coarse Leveling Points,Coarse Leveling Points,粗调平点位
+Command,Command,命令
+Command Selection,Command Selection,命令选择
+Custom,Custom,自定义
+Data has been modified and not saved yet,Data has been modified and not saved yet,有数据被修改，尚未保存
+Delete,Delete,删除
+Disable Force Control,Disable Force Control,关闭力控制
+Down,Down,下
+Down Align Point Search,Down Align Point Search,下对准点位搜索
+Down Chip Info,Down Chip Info,下芯片信息
+Down Chip:,Down Chip:,下芯片:
+Down Chuck Leveling Points,Down Chuck Leveling Points,下吸盘调平点位
+Down Chuck Temperature,Down Chuck Temperature,下吸盘温度
+Down Leveling Points,Down Leveling Points,下调平点位
+Down Template Name,Down Template Name,下模板名
+Edit Bond Points,Edit Bond Points,编辑点位
+Expansion Depth:,Expansion Depth:,扩膜深度:
+Fine Align Result Tolerance Range,Fine Align Result Tolerance Range,精对准结果公差范围
+Fine Leveling Check Times:,Fine Leveling Check Times:,核查精调平次数:
+Fine Leveling Result Tolerance Range,Fine Leveling Result Tolerance Range,精调平结果公差范围
+Force Control,Force Control,力控制
+Hold Time,Hold Time,保持时间
+Layout Mode:,Layout Mode:,布局模式:
+Level and Focus,Level and Focus,调平调焦
+Leveling Focal Plane Offset,Leveling Focal Plane Offset,调平焦面偏执
+Leveling Offset Rx:,Leveling Offset Rx:,调平偏执Rx:
+Leveling Offset Ry:,Leveling Offset Ry:,调平偏执Ry:
+Leveling Settings,Leveling Settings,调平设置
+Lower Wafer Edit Mode:,Lower Wafer Edit Mode:,下晶圆编辑模式:
+Material Info,Material Info,物料信息
+Max Force N,Max Force N,最大压力 N
+Max Temperature ℃,Max Temperature ℃,最高温度 ℃
+Min Force N,Min Force N,最小压力 N
+Min Temperature ℃,Min Temperature ℃,最低温度 ℃
+Mode Selection:,Mode Selection:,模式选择:
+Move Down,Move Down,下移
+Move Up,Move Up,上移
+Multi,Multi,多片
+Notice,Notice,提示
+One Chip,One Chip,单一型
+Operation Mode,Operation Mode,运行模式
+Operation Mode:,Operation Mode:,运行模式:
+Please set both to the same value,Please set both to the same value,请将两者设为相同值。
+Please set the timeout greater than %1 s or the steady time less than %2 s,Please set the timeout greater than %1 s or the steady time less than %2 s,请将超时时间设为大于 %1 s，或将稳定时间设为小于 %2 s。
+Precision,Precision,精度
+Preview,Preview,预览
+Recipe verification failed,Recipe verification failed,处方校验未通过
+Recipe verification passed,Recipe verification passed,处方校验通过。
+Save Bond Points,Save Bond Points,保存选点
+Search Circles:,Search Circles:,搜索圈数:
+Select All,Select All,全选
+Selected Point Count,Selected Point Count,已选点数量
+Simulation Curve,Simulation Curve,模拟曲线
+Single,Single,单片
+Single Chip Edit,Single Chip Edit,单个芯片编辑
+Single Step Search Height:,Single Step Search Height:,单步搜索高度:
+Single Step Search Width:,Single Step Search Width:,单步搜索宽度:
+Speed mm/s,Speed mm/s,速率 mm/s
+Steady Time s,Steady Time s,稳定时间 s
+Target Force N,Target Force N,目标压力 N
+Target Temperature ℃,Target Temperature ℃,目标温度 ℃
+Temperature Control,Temperature Control,温度控制
+Temperature mismatch: row %1 [Wait for Temperature] target temperature (%2) != row %3 [Temperature Control] target temperature (%4),Temperature mismatch: row %1 [Wait for Temperature] target temperature (%2) != row %3 [Temperature Control] target temperature (%4),温度不一致：第 %1 行 [等待温度到达] 目标温度 (%2) != 第 %3 行 [温度控制] 目标温度 (%4)。
+Template Name,Template Name,模板名
+The selected chip recipe is unreleased or has been deleted,The selected chip recipe is unreleased or has been deleted,当前使用的芯片处方未发布或已被删除
+Throughput,Throughput, 产率
+Time,Time,时间
+Timeout s,Timeout s,超时时间 s
+Up,Up,上
+Up Align Point Search,Up Align Point Search,上对准点位搜索
+Up Air Cooling,Up Air Cooling,上气冷
+Up and Down,Up and Down,上和下
+Up Chip Info,Up Chip Info,上芯片信息
+Up Chip:,Up Chip:,上芯片:
+Up Chuck Leveling Points,Up Chuck Leveling Points,上吸盘调平点位
+Up Chuck Temperature,Up Chuck Temperature,上吸盘温度
+Up Leveling Points,Up Leveling Points,上调平点位
+Up Template Name,Up Template Name,上模板名
+Verify Recipe,Verify Recipe,校验处方
+Wafer Edge Length:,Wafer Edge Length:,晶圆边缘长度:
+Wafer Leveling,Wafer Leveling,晶圆调平
+Wafer Leveling Points,Wafer Leveling Points,晶圆调平点位
+Wafer Notch Angle:,Wafer Notch Angle:,晶圆缺口角度:
+Wafer Size:,Wafer Size:,晶圆尺寸:
+Wafer Thickness:,Wafer Thickness:,晶圆厚度:
+Wait for Bond Force,Wait for Bond Force,等待键合力到达
+Wait for Bond Force timeout error: row %1 [Wait for Bond Force] timeout (%2 s) <= row %3 [Force Control] steady time (%4 s),Wait for Bond Force timeout error: row %1 [Wait for Bond Force] timeout (%2 s) <= row %3 [Force Control] steady time (%4 s),等待力超时设置错误：第 %1 行 [等待键合力到达] 超时时间 (%2 s) <= 第 %3 行 [力控制] 稳定时间 (%4 s)。
+Wait for Temperature,Wait for Temperature,等待温度到达
+Wait for Temperature timeout error: row %1 [Wait for Temperature] timeout (%2 s) <= row %3 [Temperature Control] steady time (%4 s),Wait for Temperature timeout error: row %1 [Wait for Temperature] timeout (%2 s) <= row %3 [Temperature Control] steady time (%4 s),等待温度超时设置错误：第 %1 行 [等待温度到达] 超时时间 (%2 s) <= 第 %3 行 [温度控制] 稳定时间 (%4 s)。
+ManualForceCtl,ManualForceCtl,力控制
+WaitForManualForce,WaitForManualForce,等待键合力到达
+TempCtl,TempCtl,温度控制
+WaitForTemp,WaitForTemp,等待温度到达
+HoldTime,HoldTime,保持时间
+Edit,Edit,编辑
+Save,Save,保存
+Chip Calibration Points,Chip Calibration Points,芯片标定点位
+Wafer Leveling Data Collect,Wafer Leveling Data Collect,晶圆调平数据收集
+Level Point for Fine Align:,Level Point for Fine Align:,调平点位是否用精对准:

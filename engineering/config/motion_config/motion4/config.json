@@ -1,0 +1,33 @@
+{
+  "systemName": "芯片传输",
+  "moduleName": "motion4",
+  "observerPeriodMs": 500,
+  "acs_stages": [
+    {
+      "name": "FA_X",
+      "configPath": "acs/FA_X.json",
+      "axisNames": ["X(mm)"],
+      "refreshPeriodMs": 500
+    }
+  ],
+  "plc_stages": [
+    {
+      "name": "FA_Rx",
+      "configPath": "plc/FA_Rx.json",
+      "axisNames": ["Rx(rad)"],
+      "refreshPeriodMs": 500
+    },
+    {
+      "name": "FA_Z",
+      "configPath": "plc/FA_Z.json",
+      "axisNames": ["Z(mm)"],
+      "refreshPeriodMs": 500
+    },
+    {
+      "name": "FA_Rz",
+      "configPath": "plc/FA_Rz.json",
+      "axisNames": ["Rz(rad)"],
+      "refreshPeriodMs": 500
+    }
+  ]
+}

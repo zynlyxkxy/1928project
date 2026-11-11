@@ -1,0 +1,1439 @@
+{
+  "bondArm": {
+    "valueName": "bondArm",
+    "bondHeadRx": {
+      "valueName": "bondHeadRx",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s",
+        "brief": ""
+      }
+    },
+    "bondHeadRy": {
+      "valueName": "bondHeadRy",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s",
+        "brief": ""
+      }
+    },
+    "bondHeadZ": {
+      "valueName": "bondHeadZ",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "chuckLength": {
+      "valueName": "chuckLength",
+      "valueType": 2,
+      "value": 25,
+      "length_max": 9999,
+      "length_min": -9999,
+      "unit": "mm",
+      "brief": ""
+    },
+    "chuckWidth": {
+      "valueName": "chuckWidth",
+      "valueType": 2,
+      "value": 25,
+      "length_max": 9999,
+      "length_min": -9999,
+      "unit": "mm",
+      "brief": ""
+    }
+  },
+  "alignStage": {
+    "valueName": "alignStage",
+    "alignStageX": {
+      "valueName": "alignStageX",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "alignStageY": {
+      "valueName": "alignStageY",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "alignStageZ": {
+      "valueName": "alignStageZ",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "upFineAlignCamera": {
+      "valueName": "upFineAlignCamera",
+      "cameraId": {
+        "valueName": "cameraId",
+        "valueType": 1,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "",
+        "brief": ""
+      },
+      "visionTimeOutMs": {
+        "valueName": "visionTimeOutMs",
+        "valueType": 1,
+        "value": 30000,
+        "length_max": 999999,
+        "length_min": -999999,
+        "unit": "ms",
+        "brief": ""
+      }
+    },
+    "downFineAlignCamera": {
+      "valueName": "downFineAlignCamera",
+      "cameraId": {
+        "valueName": "cameraId",
+        "valueType": 1,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "",
+        "brief": ""
+      },
+      "visionTimeOutMs": {
+        "valueName": "visionTimeOutMs",
+        "valueType": 1,
+        "value": 30000,
+        "length_max": 999999,
+        "length_min": -999999,
+        "unit": "ms",
+        "brief": ""
+      }
+    },
+    "upChromaticConfocal": {
+      "valueName": "upChromaticConfocal",
+      "cfId": {
+        "valueName": "cfId",
+        "valueType": 1,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "",
+        "brief": ""
+      },
+      "cfTimeOutMs": {
+        "valueName": "cfTimeOutMs",
+        "valueType": 1,
+        "value": 30000,
+        "length_max": 999999,
+        "length_min": -999999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "cfToCamOffsetXY": {
+        "valueName": "cfToCamOffsetXY",
+        "x_": {
+          "valueName": "x_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        },
+        "y_": {
+          "valueName": "y_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        }
+      }
+    },
+    "downChromaticConfocal": {
+      "valueName": "downChromaticConfocal",
+      "cfId": {
+        "valueName": "cfId",
+        "valueType": 1,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "",
+        "brief": ""
+      },
+      "cfTimeOutMs": {
+        "valueName": "cfTimeOutMs",
+        "valueType": 1,
+        "value": 30000,
+        "length_max": 999999,
+        "length_min": -999999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "cfToCamOffsetXY": {
+        "valueName": "cfToCamOffsetXY",
+        "x_": {
+          "valueName": "x_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        },
+        "y_": {
+          "valueName": "y_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        }
+      }
+    }
+  },
+  "siliconStage": {
+    "valueName": "siliconStage",
+    "siliconStageX": {
+      "valueName": "siliconStageX",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "siliconStageY": {
+      "valueName": "siliconStageY",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "siliconStageRz": {
+      "valueName": "siliconStageRz",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s",
+        "brief": ""
+      }
+    },
+    "epinZ": {
+      "valueName": "epinZ",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "chuckDiameter": {
+      "valueName": "chuckDiameter",
+      "valueType": 2,
+      "value": 12,
+      "length_max": 9999,
+      "length_min": -9999,
+      "unit": "inch",
+      "brief": ""
+    }
+  },
+  "chipTransfer": {
+    "valueName": "chipTransfer",
+    "punchPinZ": {
+      "valueName": "punchPinZ",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "filpModuleX": {
+      "valueName": "filpModuleX",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "filpModuleZ": {
+      "valueName": "filpModuleZ",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm/s",
+        "brief": ""
+      }
+    },
+    "filpModuleRx": {
+      "valueName": "filpModuleRx",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s",
+        "brief": ""
+      }
+    },
+    "filpModuleRz": {
+      "valueName": "filpModuleRz",
+      "acc": {
+        "valueName": "acc",
+        "valueType": 2,
+        "value": 2,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s²",
+        "brief": ""
+      },
+      "moveTimeOut": {
+        "valueName": "moveTimeOut",
+        "valueType": 2,
+        "value": 5000,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "softLimitPositive": {
+        "valueName": "softLimitPositive",
+        "valueType": 2,
+        "value": 9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "softLimitNegative": {
+        "valueName": "softLimitNegative",
+        "valueType": 2,
+        "value": -9999,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "settlingTime": {
+        "valueName": "settlingTime",
+        "valueType": 2,
+        "value": 100,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "ms",
+        "brief": ""
+      },
+      "tolerance": {
+        "valueName": "tolerance",
+        "valueType": 2,
+        "value": 0.002,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°",
+        "brief": ""
+      },
+      "vel": {
+        "valueName": "vel",
+        "valueType": 2,
+        "value": 0.5,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "°/s",
+        "brief": ""
+      }
+    }
+  },
+  "process": {
+    "valueName": "process",
+    "commonProc": {
+      "valueName": "commonProc",
+      "downCamBestFocusCfValue": {
+        "valueName": "downCamBestFocusCfValue",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "upCamBestFocusCfValue": {
+        "valueName": "upCamBestFocusCfValue",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "upChuckCenterAlignTableXY": {
+        "valueName": "upChuckCenterAlignTableXY",
+        "x_": {
+          "valueName": "x_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        },
+        "y_": {
+          "valueName": "y_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        }
+      },
+      "downChuckBestFocusAlignTableZ": {
+        "valueName": "downChuckBestFocusAlignTableZ",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "upChuckBestFocusBondHeadRxRyZ": {
+        "valueName": "upChuckBestFocusBondHeadRxRyZ",
+        "rx_": {
+          "valueName": "rx_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "°",
+          "brief": ""
+        },
+        "ry_": {
+          "valueName": "ry_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "°",
+          "brief": ""
+        },
+        "z_": {
+          "valueName": "z_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        }
+      },
+      "downChuckCenterWaferTableXYRz": {
+        "valueName": "downChuckCenterWaferTableXYRz",
+        "x_": {
+          "valueName": "x_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        },
+        "y_": {
+          "valueName": "y_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        },
+        "rz_": {
+          "valueName": "rz_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "°",
+          "brief": ""
+        }
+      }
+    },
+    "chipPosCalibProc": {
+      "valueName": "chipPosCalibProc",
+      "maxZCompensateTimes": {
+        "valueName": "maxZCompensateTimes",
+        "valueType": 1,
+        "value": 3,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "次",
+        "brief": ""
+      },
+      "zCompensatePrecision": {
+        "valueName": "zCompensatePrecision",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      }
+    },
+    "chuckLevelProc": {
+      "valueName": "chuckLevelProc",
+      "maxCompensateTimes": {
+        "valueName": "maxCompensateTimes",
+        "valueType": 1,
+        "value": 3,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "次",
+        "brief": ""
+      }
+    },
+    "fineLevelProc": {
+      "valueName": "fineLevelProc",
+      "maxCompensateTimes": {
+        "valueName": "maxCompensateTimes",
+        "valueType": 1,
+        "value": 3,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "次",
+        "brief": ""
+      }
+    },
+    "bondProc": {
+      "valueName": "bondProc",
+      "searchForce": {
+        "valueName": "searchForce",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 10,
+        "length_min": 0,
+        "unit": "N",
+        "brief": "搜位力"
+      },
+      "searchSpeed": {
+        "valueName": "searchSpeed",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 3,
+        "length_min": 0,
+        "unit": "mm/s",
+        "brief": "搜位速度"
+      },
+      "searchPosTimeoutMs": {
+        "valueName": "searchPosTimeoutMs",
+        "valueType": 1,
+        "value": 300000,
+        "length_max": 600000,
+        "length_min": 0,
+        "unit": "ms",
+        "brief": "搜位超时"
+      },
+      "alignStageSafePosXY": {
+        "valueName": "alignStageSafePosXY",
+        "x_": {
+          "valueName": "x_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": "对准台安全位X"
+        },
+        "y_": {
+          "valueName": "y_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": "对准台安全位Y"
+        }
+      }
+    },
+    "waferLoadUnloadProc": {
+      "valueName": "waferLoadUnloadProc",
+      "epinLoadHeight": {
+        "valueName": "epinLoadHeight",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "epinLowestHeight": {
+        "valueName": "epinLowestHeight",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "mm",
+        "brief": ""
+      },
+      "siliconStageLoadPosXY": {
+        "valueName": "siliconStageLoadPosXY",
+        "x_": {
+          "valueName": "x_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        },
+        "y_": {
+          "valueName": "y_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        }
+      },
+      "siliconStageAirPressureThreshold": {
+        "valueName": "siliconStageAirPressureThreshold",
+        "valueType": 2,
+        "value": 0,
+        "length_max": 9999,
+        "length_min": -9999,
+        "unit": "kPa",
+        "brief": ""
+      },
+      "alignStageLoadClearPosXY": {
+        "valueName": "alignStageLoadClearPosXY",
+        "x_": {
+          "valueName": "x_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        },
+        "y_": {
+          "valueName": "y_",
+          "valueType": 2,
+          "value": 0,
+          "length_max": 9999,
+          "length_min": -9999,
+          "unit": "mm",
+          "brief": ""
+        }
+      }
+    }
+  }
+}

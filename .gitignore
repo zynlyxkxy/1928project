@@ -1,0 +1,29 @@
+# ============================================================
+#  预编译依赖 / 部署产物 —— 不进仓库
+#  这些是二进制（单个 dll 可达 78 MB，接近 GitHub 单文件上限），
+#  用 Release 里的 deps 包解压还原，见 MANIFEST.md
+# ============================================================
+/platform_output/
+/exe/
+/engineering/runtime/
+
+# 构建目录
+/build*/
+/build/
+/output/
+/bin/
+/out/
+
+# 编辑器 / 工具个人配置
+*.user
+.vs/
+.idea/
+.claude/
+
+# 日志 / 中间物
+/Log*
+*.log
+*.obj
+*.pdb
+*.ilk
+*.exp

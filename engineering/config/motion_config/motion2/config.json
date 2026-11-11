@@ -1,0 +1,26 @@
+{
+  "systemName": "键合模块",
+  "moduleName": "motion2",
+  "observerPeriodMs": 500,
+  "acs_stages": [],
+  "plc_stages": [
+    {
+      "name": "ArmHead_Z",
+      "configPath": "plc/ArmHead_Z.json",
+      "axisNames": ["Z(mm)"],
+      "refreshPeriodMs": 500
+    },
+    {
+      "name": "ArmHead_Rx",
+      "configPath": "plc/ArmHead_Rx.json",
+      "axisNames": ["Rx(rad)"],
+      "refreshPeriodMs": 500
+    },
+    {
+      "name": "ArmHead_Ry",
+      "configPath": "plc/ArmHead_Ry.json",
+      "axisNames": ["Ry(rad)"],
+      "refreshPeriodMs": 500
+    }
+  ]
+}

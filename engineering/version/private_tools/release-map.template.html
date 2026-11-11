@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>__TITLE__</title>
+<style>
+:root{
+  --bg:#F4F7FB; --card:#fff; --line:#E2E8F0; --ink:#0F172A; --muted:#64748B; --faint:#94A3B8;
+  --accent:#1D4ED8; --accent-soft:#EFF6FF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei UI","Segoe UI",sans-serif}
+.page{max-width:1440px;margin:0 auto;padding:22px 28px 34px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:12px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:var(--muted);font-size:13px;margin:0}
+.stats{display:flex;gap:28px}
+.stat b{display:block;font-size:21px;color:var(--accent);line-height:1.1}
+.stat span{font-size:12px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 16px;box-shadow:0 1px 2px rgba(15,23,42,.04);margin-bottom:14px}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px}
+h2{font-size:14px;margin:0;color:#334155}
+h3{font-size:12px;color:var(--muted);margin:0 0 8px;font-weight:600}
+.hint{font-size:12px;color:var(--faint)}
+
+.tabs{display:flex;gap:6px;margin-bottom:14px}
+.tabs button{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:10px;padding:7px 16px;font-size:13px;cursor:pointer;font-family:inherit}
+.tabs button:hover{border-color:#BFDBFE;color:#334155}
+.tabs button.on{background:var(--accent-soft);border-color:#BFDBFE;color:var(--accent);font-weight:600}
+
+.legend{display:flex;gap:16px;align-items:center;font-size:12px;color:var(--muted)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.tools{display:flex;gap:12px;align-items:center;font-size:12px;color:var(--muted)}
+.tools label{cursor:pointer;user-select:none}
+
+.matrix-wrap{max-height:560px;overflow:auto;border:1px solid var(--line);border-radius:10px}
+table.matrix{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;font-size:12.5px}
+.matrix thead th:first-child{text-align:left;padding-left:16px;position:sticky;top:0;left:0;z-index:5;background:#F8FAFC}
+.matrix tbody td:first-child{position:sticky;left:0;z-index:1;background:#fff}
+.matrix tbody tr:hover td:first-child{background:#F8FAFC}
+.matrix thead th.click{cursor:pointer}
+.matrix thead th.click:hover{color:var(--accent)}
+.matrix thead th{position:sticky;top:0;z-index:2;background:#F8FAFC;border-bottom:1px solid var(--line);padding:9px 10px;font-weight:600;color:#334155;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.matrix thead th .bar{display:block;height:3px;border-radius:2px;margin:-9px -10px 6px;background:#CBD5E1}
+.matrix tbody td{padding:9px 10px;height:34px;border-bottom:1px solid #EEF2F7;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.matrix tbody tr:last-child td{border-bottom:0}
+.matrix tbody tr:hover td{background:#F8FAFC}
+.mv{text-align:left;padding-left:16px !important}
+.matrix tbody td.mv{text-align:left}
+.mv .v{font-weight:700;font-size:13.5px;font-family:Consolas,monospace}
+.mv .d{font-size:11px;color:var(--faint);margin-top:1px}
+.tagcell{font-family:Consolas,monospace;font-size:11.5px;color:#94A3B8;border:1px solid transparent;border-radius:6px;padding:1px 6px}
+.tagcell.new{color:var(--accent);font-weight:700;border-color:#BFDBFE;background:#fff}
+.tagcell .nn{opacity:.75;font-weight:600}
+.count{display:inline-block;min-width:26px;padding:2px 8px;border-radius:999px;background:#EEF2F7;color:#475569;font-size:11.5px}
+.count.none{background:transparent;color:#CBD5E1}
+
+.detail-head{display:flex;align-items:baseline;gap:12px;padding:2px 0 10px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.detail-title{font-size:17px;font-weight:700;font-family:Consolas,monospace}
+.detail-meta{font-size:12px;color:var(--muted)}
+.detail-tag{font-family:Consolas,monospace;font-size:11px;color:var(--faint);margin-left:auto}
+.bind-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.bind{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:8px;padding:5px 10px;font-size:12px;background:#FBFDFF}
+.bind.changed{border-color:#BFDBFE;background:var(--accent-soft)}
+.bind .name{font-weight:600;color:#334155}
+.bind .val{font-family:Consolas,monospace;color:#0F172A}
+.bind .old{font-family:Consolas,monospace;color:var(--faint);font-size:11px}
+.bind.changed .val{color:var(--accent);font-weight:700}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:10px}
+.unchanged{font-size:12px;color:var(--faint);margin-top:10px}
+.repo-block{background:#F8FAFC;border:1px solid #EEF2F7;border-radius:10px;padding:10px 12px}
+.repo-block:first-child{margin-top:2px}
+.repo-title{display:flex;align-items:center;gap:8px;font-weight:700;font-size:13px;margin-bottom:2px}
+.repo-title .range{font-family:Consolas,monospace;color:var(--faint);font-weight:400;font-size:11px}
+.ver-tag{display:inline-block;background:#fff;border:1px solid #DBEAFE;color:var(--accent);border-radius:6px;padding:1px 7px;font-family:Consolas,monospace;font-size:11px}
+ol{margin:5px 0 0 19px;padding:0}
+li{font-size:12.5px;line-height:1.7;color:#334155;margin:1px 0}
+.para{font-size:12.5px;color:#334155;line-height:1.65;margin:4px 0}
+.cat{font-weight:600;color:#475569;font-size:12px;margin:6px 0 2px}
+.empty{color:var(--faint);font-size:12.5px;padding:7px 0}
+
+.ver{font-family:Consolas,monospace;font-size:12px;color:#94A3B8}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border-radius:999px;background:#fff;border:1px solid #BFDBFE;color:var(--accent);font-family:Consolas,monospace;font-size:12px;font-weight:600}
+/* 异常标记：全用红色 */
+.warn{color:#DC2626;font-weight:600}
+.chip.bad{border-color:#FCA5A5;background:#FEF2F2;color:#DC2626}
+.ver.bad{color:#DC2626}
+.repo-block.bad{background:#FEF2F2;border-color:#FCA5A5}
+.bind.bad{border-color:#FCA5A5;background:#FEF2F2}
+.bind.bad .val{color:#DC2626;font-weight:700}
+.chip .up{font-size:11px;opacity:.8}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <h1>__TITLE__</h1>
+      <p class="sub">最新版本在最上面 · 一版一行，版本列是去掉前缀的主仓标签</p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div id="viewVersion">
+    <section class="card">
+      <div class="card-head">
+        <h2>主仓发布</h2>
+        <div class="tools">
+          <label><input type="checkbox" id="onlyFormal"> 只看正式发布版本</label>
+          <label><input type="checkbox" id="transpose"> 纵向排列（子仓为行）</label>
+        </div>
+        <div class="legend">
+          <span><span class="dot" style="background:#2563EB"></span>本版更新</span>
+          <span><span class="dot" style="background:#CBD5E1"></span>沿用上一版</span>
+        </div>
+      </div>
+      <div class="matrix-wrap"><table class="matrix" id="vTable"></table></div>
+    </section>
+    <section class="card">
+      <div class="detail-head">
+        <div class="detail-title" id="vTitle"></div>
+        <div class="detail-meta" id="vMeta"></div>
+        <div class="detail-tag" id="vTag"></div>
+      </div>
+      <div class="bind-row" id="vBinding"></div>
+      <div class="notes" id="vNotes"></div>
+      <div class="unchanged" id="vUnchanged"></div>
+    </section>
+  </div>
+</div>
+
+<script>
+const CSV_TEXT = __CSV__;
+const MD_TEXT = __MD__;
+
+/* ---------- CSV ---------- */
+const rawRows = CSV_TEXT.trim() ? CSV_TEXT.trim().split(/\r?\n/).slice(1) : [];
+const rows = rawRows.map(line => {
+  const c = line.split(',');
+  return { mainTag:c[0]||'', version:c[1]||'', date:c[2]||'', repo:c[3]||'',
+           repoTag:c[4]||'', repoVersion:c[5]||'', changed:c[7]||'', status:c[8]||'' };
+}).filter(r => r.mainTag);
+
+const COLORS = ['#2563EB','#7C3AED','#0D9488','#D97706','#DB2777','#0284C7','#65A30D','#DC2626','#9333EA','#0891B2'];
+const REPOS = [];
+for (const r of rows) if (r.repo && !REPOS.includes(r.repo)) REPOS.push(r.repo);
+const shortName = p => String(p).split('/').pop();
+const colorOf = p => COLORS[Math.max(0, REPOS.indexOf(p)) % COLORS.length];
+
+const nnOf = tag => { const m = /_Rel_\d{8}(\d{2})$/.exec(tag||''); return m ? Number(m[1]) : 0; };
+const dateOfTag = tag => { const m = /_Rel_(\d{4})(\d{2})(\d{2})/.exec(tag||''); return m ? m[1]+'-'+m[2]+'-'+m[3] : ''; };
+const vparts = v => String(v).split('.').map(Number);
+const vcmp = (a,b) => { const x=vparts(a), y=vparts(b); for (let i=0;i<3;i++) if (x[i]!==y[i]) return x[i]-y[i]; return 0; };
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+
+/* 主仓标签去掉前缀（兜底用；正常情况标签名由脚本直接写进 CSV 的 version 列） */
+const labelOf = t => String(t).replace(/^[^-]+-/, '');
+/* 正式发布版本：脚本约定，名字里不带 _Rel_ 的算正式版（仅用于筛选显示） */
+const isFormal = t => !/_Rel_/.test((metaOf[t] || {}).version || labelOf(t));
+
+/* ---------- 每个主仓标签一行，顺序就是 CSV 的顺序（旧 -> 新） ----------
+   CSV 由脚本按 RELEASE.md 的顺序生成，这里不再自己排序：标签叫什么名字
+   都由脚本如实记录，前端不做任何解析或判断。 */
+const tagList = [...new Set(rows.map(r => r.mainTag))];
+
+const metaOf = {};
+for (const t of tagList) {
+  const rs = rows.filter(r => r.mainTag === t);
+  metaOf[t] = {
+    version: (rs[0] || {}).version || '',
+    date: (rs[0] || {}).date || dateOfTag(t),
+    missing: rs.some(r => r.status === 'no_main_tag')
+  };
+}
+
+const bindOf = {};
+for (const t of tagList) {
+  const m = {};
+  for (const r of rows) if (r.mainTag === t && r.repo) {
+    m[r.repo] = { tag:r.repoTag, version:r.repoVersion, changed:r.changed === '1', status:r.status };
+  }
+  bindOf[t] = m;
+}
+
+let onlyFormal = false;
+let transposed = false;
+let selected = tagList.length ? tagList[tagList.length - 1] : '';
+
+/* 这一版相对上一版的绑定变化；第一个发布全部算作更新 */
+function changesOf(t) {
+  const i = tagList.indexOf(t);
+  const cur = bindOf[t] || {};
+  const prev = i > 0 ? (bindOf[tagList[i-1]] || null) : null;
+  return REPOS.map(repo => {
+    const c = cur[repo] || null;
+    const o = prev ? (prev[repo] || null) : null;
+    return {
+      repo,
+      tag: c ? c.tag : '',
+      version: c ? c.version : '',
+      status: c ? c.status : '',
+      before: o ? (o.version || o.tag) : '',
+      changed: prev ? (!c || !o || c.tag !== o.tag) : true
+    };
+  });
+}
+
+/* ---------- CHANGELOG ---------- */
+function sectionLines(label) {
+  const lines = MD_TEXT.split(/\r?\n/);
+  let on = false;
+  const out = [];
+  for (const line of lines) {
+    if (line.trim() === '## 主仓 ' + label) { on = true; continue; }
+    if (on) {
+      const t = line.trim();
+      if (t.startsWith('## 主仓 ') || t === '---') break;
+      out.push(line);
+    }
+  }
+  return out;
+}
+
+function parseSection(label) {
+  const res = { main: [], repos: [] };
+  let cur = null, curVer = null;
+  for (const raw of sectionLines(label)) {
+    const line = raw.trim();
+    if (!line) continue;
+    if (line.startsWith('|') || line.startsWith('发布日期：')) continue;
+
+    let m = line.match(/^### 子仓 (.+?)：(.+?) → (.+?)$/);
+    if (m) { cur = { repo:m[1].trim(), from:m[2].trim(), to:m[3].trim(), blocks:[] }; res.repos.push(cur); curVer = null; continue; }
+    m = line.match(/^### 子仓 (.+?)：(.+)$/);
+    if (m) { cur = { repo:m[1].trim(), from:'', to:m[2].trim(), blocks:[] }; res.repos.push(cur); curVer = null; continue; }
+
+    const m3 = line.match(/^\d+[\.、]?\s+(.*)$/);
+    if (!cur) {
+      if (line === '更新内容：' || /^版本 \d+\.\d+\.\d+$/.test(line)) res.main.push({ type:'cat', text:line });
+      else if (m3) res.main.push({ type:'li', text:m3[1] });
+      else res.main.push({ type:'p', text:line });
+      continue;
+    }
+
+    m = line.match(/^版本 (\d+\.\d+\.\d+)$/);
+    if (m) { curVer = { v:m[1], items:[] }; cur.blocks.push(curVer); continue; }
+    if (!curVer) { curVer = { v:'', items:[] }; cur.blocks.push(curVer); }
+    if (line === '更新内容：' || line === '使用方法：') { curVer.items.push({ type:'cat', text:line }); continue; }
+    if (m3) { curVer.items.push({ type:'li', text:m3[1] }); continue; }
+    if (line === '本版没有子仓版本更新。') continue;
+    curVer.items.push({ type:'p', text:line });
+  }
+  return res;
+}
+
+function itemHtml(items) {
+  let html = '', listOpen = false;
+  const close = () => { if (listOpen) { html += '</ol>'; listOpen = false; } };
+  for (const it of items) {
+    if (it.type === 'cat') { close(); html += '<div class="cat">' + esc(it.text) + '</div>'; }
+    else if (it.type === 'li') { if (!listOpen) { html += '<ol>'; listOpen = true; } html += '<li>' + esc(it.text) + '</li>'; }
+    else { close(); html += '<div class="para">' + esc(it.text) + '</div>'; }
+  }
+  close();
+  return html;
+}
+
+function repoBlockHtml(b, bad) {
+  const range = b.from ? b.from + ' → ' + b.to : b.to;
+  const body = b.blocks.map(vb =>
+    '<div class="ver-block">' + (vb.v ? '<span class="ver-tag">版本 ' + esc(vb.v) + '</span>' : '') +
+    itemHtml(vb.items) + '</div>').join('');
+  return '<div class="repo-block' + (bad ? ' bad' : '') + '"><div class="repo-title">' +
+    '<span class="dot" style="background:' + colorOf(b.repo) + '"></span>' +
+    esc(shortName(b.repo)) + '<span class="range">' + esc(range) + '</span></div>' + body + '</div>';
+}
+
+/* 主仓自己这一版的更新内容 */
+function mainBlockHtml(items) {
+  if (!items || !items.length) return '';
+  // 卡片标题已经叫“更新内容”，正文再写一次这个分类就重复了。
+  let list = items;
+  if (list[0] && list[0].type === 'cat' && list[0].text === '更新内容：') list = list.slice(1);
+  if (!list.length) return '';
+  return '<div class="repo-block"><div class="repo-title">' +
+    '<span class="dot" style="background:#64748B"></span>主仓' +
+    '<span class="range">更新内容</span></div>' + itemHtml(list) + '</div>';
+}
+
+/* ---------- render ---------- */
+function renderStats() {
+  let updates = 0;
+  for (const t of tagList) updates += changesOf(t).filter(c => c.changed).length;
+  const latest = tagList.length ? metaOf[tagList[tagList.length-1]].date : '';
+  document.getElementById('stats').innerHTML =
+    '<div class="stat"><b>' + tagList.length + '</b><span>发布次数</span></div>' +
+    '<div class="stat"><b>' + REPOS.length + '</b><span>子仓</span></div>' +
+    '<div class="stat"><b>' + esc(String(latest).slice(0, 7)) + '</b><span>最近发布</span></div>';
+}
+
+function renderTable() {
+  const list = tagList.slice().reverse().filter(t => !onlyFormal || isFormal(t));
+  const table = document.getElementById('vTable');
+  table.classList.toggle('transposed', transposed);
+
+  // 列宽基准按最长标签算：88.88.88_Rel_8888888888（23 字符）≈ 152px，
+  // 加蓝框内边距/边框/▲ 约 34px、单元格内边距 20px ≈ 206px，取 220px 留余量。
+  // 横排纵排、第一列和数据列都用这一个宽度；列少时由 width:100% 均分多出来的空间。
+  const COL_W = 220;
+  const cols = transposed ? Math.max(list.length, 1) : REPOS.length;
+  table.style.minWidth = (COL_W + cols * COL_W) + 'px';
+
+  if (transposed) {
+    // 纵向：行是子仓、列是发布，子仓多的时候横向滚动
+    if (!list.length) {
+      table.innerHTML = '<tbody><tr><td class="empty">暂无发布记录</td></tr></tbody>';
+      return;
+    }
+    const head = '<thead><tr><th>子仓</th>' +
+      list.map(t => '<th class="click" data-t="' + esc(t) + '" title="' + esc(t) + '">' +
+                    esc((metaOf[t] || {}).version || labelOf(t)) + '</th>').join('') + '</tr></thead>';
+    const body = REPOS.map(repo => {
+      const cells = list.map(t => {
+        const c = (bindOf[t] || {})[repo] || null;
+        const label = c ? (c.version || (c.tag ? labelOf(c.tag) : '')) : '';
+        if (!label) return '<td><span class="tagcell">—</span></td>';
+        const bad = (c.status === 'no_sub_tag' || c.status === 'no_notes') ? ' bad' : '';
+        if (c.changed || bad) {
+          return '<td><span class="chip' + bad + '" title="' + esc(c.tag) + '">' + esc(label) +
+                 (c.changed ? '<span class="up">▲</span>' : '') + '</span></td>';
+        }
+        return '<td><span class="ver" title="' + esc(c.tag) + '">' + esc(label) + '</span></td>';
+      }).join('');
+      return '<tr><td class="mv"><div class="v">' + esc(shortName(repo)) + '</div></td>' + cells + '</tr>';
+    }).join('');
+    table.innerHTML = head + '<tbody>' + body + '</tbody>';
+    table.querySelectorAll('th[data-t]').forEach(th => {
+      th.onclick = () => { selected = th.dataset.t; render(); };
+    });
+    return;
+  }
+
+  const head = '<thead><tr><th>主仓版本</th>' +
+    REPOS.map(r => '<th title="' + esc(r) + '"><span class="bar" style="background:' + colorOf(r) + '"></span>' + esc(shortName(r)) + '</th>').join('') +
+    '</tr></thead>';
+
+  const body = list.map(t => {
+    const ch = changesOf(t);
+    const cells = ch.map(c => {
+      // 子仓列的标签由脚本给出（去前缀后的原样字符串），前端不再解析
+      const label = c.version || (c.tag ? labelOf(c.tag) : '');
+      if (!label) return '<td><span class="tagcell">—</span></td>';
+      const bad = (c.status === 'no_sub_tag' || c.status === 'no_notes') ? ' bad' : '';
+      if (c.changed || bad) {
+        return '<td><span class="chip' + bad + '" title="' + esc(c.tag) + '">' + esc(label) +
+               (c.changed ? '<span class="up">▲</span>' : '') + '</span></td>';
+      }
+      return '<td><span class="ver" title="' + esc(c.tag) + '">' + esc(label) + '</span></td>';
+    }).join('');
+    const meta = metaOf[t] || {};
+    const missing = meta.missing ? '<span class="warn"> 标签不存在</span>' : '';
+    return '<tr class="' + (t === selected ? 'sel' : '') + '" data-t="' + esc(t) + '">' +
+      '<td class="mv"><div class="v">' + esc(meta.version || labelOf(t)) + missing + '</div>' +
+      '<div class="d">' + esc(meta.date || '') + '</div></td>' + cells + '</tr>';
+  }).join('');
+
+  table.innerHTML = head + '<tbody>' +
+    (body || '<tr><td class="empty" colspan="' + (REPOS.length + 1) + '">暂无发布记录</td></tr>') + '</tbody>';
+  table.querySelectorAll('tr[data-t]').forEach(tr => {
+    tr.onclick = () => { selected = tr.dataset.t; render(); };
+  });
+}
+
+function renderDetail() {
+  const t = selected;
+  if (!t) return;
+  const ch = changesOf(t);
+  const meta = metaOf[t] || {};
+  const sec = parseSection(meta.version || labelOf(t));
+  const changedCount = ch.filter(c => c.changed).length;
+
+  document.getElementById('vTitle').textContent = '主仓 ' + (meta.version || labelOf(t));
+  document.getElementById('vMeta').textContent = (meta.date || '—') + ' · ' +
+    (meta.missing ? '主仓标签不存在' : (changedCount ? changedCount + ' 个子仓更新' : '子仓无更新'));
+  document.getElementById('vTag').textContent = meta.missing ? '' : t;
+
+  const statusOf = {};
+  for (const c of ch) statusOf[c.repo] = c.status;
+  const isBad = c => c.status === 'no_sub_tag' || c.status === 'no_notes';
+
+  document.getElementById('vBinding').innerHTML = ch.map(c => {
+    const label = c.version || (c.tag ? labelOf(c.tag) : '—');
+    if (meta.missing || !c.tag) {
+      return '<div class="bind' + (meta.missing || isBad(c) ? ' bad' : '') + '">' +
+        '<span class="name">' + esc(shortName(c.repo)) + '</span>' +
+        '<span class="val">' + esc(label) + '</span></div>';
+    }
+    const bad = isBad(c) ? ' bad' : '';
+    return c.changed
+      ? '<div class="bind changed' + bad + '"><span class="name">' + esc(shortName(c.repo)) + '</span>' +
+        (c.before ? '<span class="old">' + esc(c.before) + '</span><span class="old">→</span>' : '') +
+        '<span class="val">' + esc(label) + '</span></div>'
+      : '<div class="bind' + bad + '"><span class="name">' + esc(shortName(c.repo)) + '</span>' +
+        '<span class="val">' + esc(label) + '</span></div>';
+  }).join('');
+
+  const mainHtml = mainBlockHtml(sec.main);
+  const repoHtml = sec.repos.map(b => repoBlockHtml(b, isBad({ status: statusOf[b.repo] }))).join('');
+  document.getElementById('vNotes').innerHTML = (mainHtml + repoHtml) ||
+    '<div class="empty">' + (meta.missing ? '主仓标签不存在，没有可读的绑定。' : '本版没有子仓版本更新。') + '</div>';
+
+  const unchanged = ch.filter(c => !c.changed && c.tag)
+                       .map(c => shortName(c.repo) + ' ' + (c.version || labelOf(c.tag)));
+  const unchangedLine = document.getElementById('vUnchanged');
+  unchangedLine.textContent = unchanged.length ? '未变：' + unchanged.join(' · ') : '';
+  unchangedLine.title = unchangedLine.textContent;
+}
+
+function render() {
+  renderTable();
+  renderDetail();
+}
+
+document.getElementById('onlyFormal').addEventListener('change', e => {
+  onlyFormal = e.target.checked;
+  renderTable();
+});
+
+document.getElementById('transpose').addEventListener('change', e => {
+  transposed = e.target.checked;
+  renderTable();
+});
+
+if (tagList.length) {
+  renderStats();
+  render();
+} else {
+  document.getElementById('stats').innerHTML = '';
+  document.getElementById('vTable').innerHTML = '<tbody><tr><td class="empty">暂无发布记录</td></tr></tbody>';
+  document.getElementById('vTitle').textContent = '';
+  document.getElementById('vMeta').textContent = '';
+  document.getElementById('vTag').textContent = '';
+}
+</script>
+</body>
+</html>

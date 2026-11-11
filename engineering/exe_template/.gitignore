@@ -1,0 +1,20 @@
+# ============================================================
+#  exe 部署产物（deploy.bat assemble 生成，不入库）
+#  入库内容：run.bat、start_all.bat、stop_all.bat、.gitignore、
+#            shared\ 的空目录占位 .gitkeep
+#  config（现场配置）整个忽略，不保留占位
+#
+#  布局：apps\<程序>\  每个程序一个文件夹（更新=换文件夹）
+#        shared\platform\  ISTAR*.dll + rpc libUI*.dll
+#        shared\system\    Qt5*.dll + platforms\ + styles\ + VC 运行时
+#        config\           现场配置，独立一层
+# ============================================================
+
+# 忽略生成产物
+apps/**
+shared/**
+config/**
+
+# 只保留 shared 目录结构与 .gitkeep 占位
+!shared/**/
+!shared/**/.gitkeep

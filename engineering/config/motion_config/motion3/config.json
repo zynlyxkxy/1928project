@@ -1,0 +1,26 @@
+{
+  "systemName": "对准模块",
+  "moduleName": "motion3",
+  "observerPeriodMs": 500,
+  "acs_stages": [
+    {
+      "name": "AlignStage_XY",
+      "configPath": "acs/AlignStage_XY.json",
+      "axisNames": ["X(mm)", "Y(mm)"],
+      "refreshPeriodMs": 500
+    },
+    {
+      "name": "AlignStage_Z",
+      "configPath": "acs/AlignStage_Z.json",
+      "axisNames": ["Z(mm)"],
+      "refreshPeriodMs": 500
+    },
+    {
+      "name": "PunchZ",
+      "configPath": "acs/PunchZ.json",
+      "axisNames": ["Z(mm)"],
+      "refreshPeriodMs": 500
+    }
+  ],
+  "plc_stages": []
+}

@@ -1,0 +1,30 @@
+{
+  "ip": "192.168.1.100",
+  "port": 90,
+
+  "machinePartFullPath": "3000_1_Controller/SystemMachine.SS_CH.M_FA.Rx",
+
+  "cmd_bindings": {
+    "Enable":     "Enable",
+    "Disable":    "Disable",
+    "Home":       "Home",
+    "MoveAbs":    "MoveAbs",
+    "MoveRel":    "MoveRel",
+    "Stop":       "Halt",
+    "ResetError": "Reset Error",
+    "Jog":        "",
+    "SetVelAcc":  "SetMoveParam",
+    "SetDec":     "",
+    "SetJerk":    "",
+    "SetKillDec": ""
+  },
+
+  "obs_bindings": {
+    "Pos":    ["oCurrentPos_GC"],
+    "Vel":    ["obMoveSpd"],
+    "Acc":    [""],
+    "Enable": ["oMotorEnabled"],
+    "Moving": ["oMoving"],
+    "InPos":  ["oInPos"]
+  }
+}

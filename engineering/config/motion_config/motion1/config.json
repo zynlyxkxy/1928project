@@ -1,0 +1,27 @@
+{
+  "systemName": "硅片台模块",
+  "moduleName": "motion1",
+  "observerPeriodMs": 500,
+  "acs_stages": [
+    {
+      "name": "WaferStage_XY",
+      "configPath": "acs/WaferStage_XY.json",
+      "axisNames": ["X(mm)", "Y(mm)"],
+      "refreshPeriodMs": 500
+    },
+    {
+      "name": "WaferStage_Rz",
+      "configPath": "acs/WaferStage_Rz.json",
+      "axisNames": ["Rz(rad)"],
+      "refreshPeriodMs": 500
+    }
+  ],
+  "plc_stages": [
+    {
+      "name": "EPIN_Z",
+      "configPath": "plc/EPIN_Z.json",
+      "axisNames": ["Z(mm)"],
+      "refreshPeriodMs": 500
+    }
+  ]
+}

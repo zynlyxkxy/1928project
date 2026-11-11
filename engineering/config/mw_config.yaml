@@ -1,0 +1,134 @@
+middleware:
+  mctrl:
+    ip: 127.0.0.1
+    port: 35000
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  io:
+    ip: 127.0.0.1
+    port: 35100
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  motion1:
+    ip: 127.0.0.1
+    port: 35200
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  motion2:
+    ip: 127.0.0.1
+    port: 35210
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  motion3:
+    ip: 127.0.0.1
+    port: 35220
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  motion4:
+    ip: 127.0.0.1
+    port: 35230
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+
+  rm:
+    ip: 127.0.0.1
+    port: 20000
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  rm2:
+    ip: 127.0.0.1
+    port: 20010
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  mc:
+    ip: 127.0.0.1
+    port: 20100
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  st:
+    ip: 127.0.0.1
+    port: 21100
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  eh:
+    ip: 127.0.0.1
+    port: 21400
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  rp:
+    ip: 127.0.0.1
+    port: 21700
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  ua:
+    ip: 127.0.0.1
+    port: 22000
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+  mt:
+    ip: 127.0.0.1
+    port: 22300
+    mode: tcp
+    options:
+      conntimeout: 10000
+      rcvtimeout: 10000
+      sndtimeout: 10000
+      maxconcurrentasync: 100 # 最大并发异步请求数，超过此值新请求排队等待
+   
+
+threadpool:
+  minThreadSize: 16
+  maxThreadSize: 32
+  threadEmptyInterval: 10

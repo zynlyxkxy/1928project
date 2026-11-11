@@ -1,0 +1,16 @@
+{
+  "acs": {
+    "ip": "192.168.1.100",
+    "port": 701,
+    "pollPeriodMs": 500,
+    "configPath": "acs/io_config.json"
+  },
+  "plc": {
+    "ip": "192.168.1.100",
+    "port": 90,
+    "pollPeriodMs": 500,
+    "configPath": "plc/io_config.json"
+  },
+  "observerPeriodMs": 500,
+  "verifyTimeoutMs": 20000
+}

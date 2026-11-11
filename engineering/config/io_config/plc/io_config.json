@@ -1,0 +1,266 @@
+{
+  "machineParts": [
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_Bonding/M_AS",
+      "DO": [
+        {"id": 6000, "name": "AlignCameraTigger_1", "label": "M_AS_AlignCameraTigger_1", "observer": "oAlignCameraTigger_1", "comment": "对准相机触发信号1"},
+        {"id": 6001, "name": "AlignCameraTigger_2", "label": "M_AS_AlignCameraTigger_2", "observer": "oAlignCameraTigger_2", "comment": "对准相机触发2"},
+        {"id": 6002, "name": "LightOn_1", "label": "M_AS_LightOn_1", "observer": "oLightOn_1", "comment": "光源触发1"},
+        {"id": 6003, "name": "LightOn_2", "label": "M_AS_LightOn_2", "observer": "oLightOn_2", "comment": "光源触发2"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/AS_X_Cooling",
+      "DO": [
+        {"id": 6004, "name": "OpenPositive", "label": "AS_X_Cooling_OpenPositive", "observer": "oPositiveState", "comment": "对准台1X轴气冷"},
+        {"id": 6005, "name": "OpenAir", "label": "AS_X_Cooling_OpenAir", "observer": "oAirState", "comment": "对准台1X轴气冷"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/AS_Y_Cooling",
+      "DO": [
+        {"id": 6006, "name": "OpenPositive", "label": "AS_Y_Cooling_OpenPositive", "observer": "oPositiveState", "comment": "对准台1Y轴气冷"},
+        {"id": 6007, "name": "OpenAir", "label": "AS_Y_Cooling_OpenAir", "observer": "oAirState", "comment": "对准台1Y轴气冷"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/PulseHeatCooling_1",
+      "DO": [
+        {"id": 6008, "name": "OpenPositive", "label": "PulseHeatCooling_1_OpenPositive", "observer": "oPositiveState", "comment": "脉冲加热冷却1"},
+        {"id": 6009, "name": "OpenAir", "label": "PulseHeatCooling_1_OpenAir", "observer": "oAirState", "comment": "脉冲加热冷却1"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/PulseHeatCooling_2",
+      "DO": [
+        {"id": 6010, "name": "OpenPositive", "label": "PulseHeatCooling_2_OpenPositive", "observer": "oPositiveState", "comment": "脉冲加热冷却2"},
+        {"id": 6011, "name": "OpenAir", "label": "PulseHeatCooling_2_OpenAir", "observer": "oAirState", "comment": "脉冲加热冷却2"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/GlassCoolingIn",
+      "DO": [
+        {"id": 6012, "name": "OpenPositive", "label": "GlassCoolingIn_OpenPositive", "observer": "oPositiveState", "comment": "微晶玻璃冷却进气"},
+        {"id": 6013, "name": "OpenAir", "label": "GlassCoolingIn_OpenAir", "observer": "oAirState", "comment": "微晶玻璃冷却进气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/GlassCoolingOut",
+      "DO": [
+        {"id": 6014, "name": "OpenPositive", "label": "GlassCoolingOut_OpenPositive", "observer": "oPositiveState", "comment": "微晶玻璃冷却出气"},
+        {"id": 6015, "name": "OpenAir", "label": "GlassCoolingOut_OpenAir", "observer": "oAirState", "comment": "微晶玻璃冷却出气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/IonicBarPositive",
+      "DO": [
+        {"id": 6016, "name": "OpenPositive", "label": "IonicBarPositive_OpenPositive", "observer": "oPositiveState", "comment": "离子棒正压"},
+        {"id": 6017, "name": "OpenAir", "label": "IonicBarPositive_OpenAir", "observer": "oAirState", "comment": "离子棒正压"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_WaferVac",
+      "DO": [
+        {"id": 6018, "name": "OpenPositive", "label": "WT_WaferVac_OpenPositive", "observer": "oPositiveState", "comment": "WT-晶圆吸附破真空(正压)"},
+        {"id": 6019, "name": "OpenNegtive", "label": "WT_WaferVac_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-晶圆吸附吸附/通断(负压)"},
+        {"id": 6020, "name": "OpenAir", "label": "WT_WaferVac_OpenAir", "observer": "oAirState", "comment": "WT-晶圆吸附通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_BondingVac_1",
+      "DO": [
+        {"id": 6021, "name": "OpenPositive", "label": "WT_BondingVac_1_OpenPositive", "observer": "oPositiveState", "comment": "WT-键合头吸盘吸附1破真空(正压)"},
+        {"id": 6022, "name": "OpenNegtive", "label": "WT_BondingVac_1_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-键合头吸盘吸附1吸附/通断(负压)"},
+        {"id": 6023, "name": "OpenAir", "label": "WT_BondingVac_1_OpenAir", "observer": "oAirState", "comment": "WT-键合头吸盘吸附1通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_BondingVac_2",
+      "DO": [
+        {"id": 6024, "name": "OpenPositive", "label": "WT_BondingVac_2_OpenPositive", "observer": "oPositiveState", "comment": "WT-键合头吸盘吸附2破真空(正压)"},
+        {"id": 6025, "name": "OpenNegtive", "label": "WT_BondingVac_2_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-键合头吸盘吸附2吸附/通断(负压)"},
+        {"id": 6026, "name": "OpenAir", "label": "WT_BondingVac_2_OpenAir", "observer": "oAirState", "comment": "WT-键合头吸盘吸附2通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_BondingVac_3",
+      "DO": [
+        {"id": 6027, "name": "OpenPositive", "label": "WT_BondingVac_3_OpenPositive", "observer": "oPositiveState", "comment": "WT-键合头吸盘吸附3破真空(正压)"},
+        {"id": 6028, "name": "OpenNegtive", "label": "WT_BondingVac_3_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-键合头吸盘吸附3吸附/通断(负压)"},
+        {"id": 6029, "name": "OpenAir", "label": "WT_BondingVac_3_OpenAir", "observer": "oAirState", "comment": "WT-键合头吸盘吸附3通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_TrayVac_1",
+      "DO": [
+        {"id": 6030, "name": "OpenPositive", "label": "WT_TrayVac_1_OpenPositive", "observer": "oPositiveState", "comment": "WT-Tray盘吸附1破真空(正压)"},
+        {"id": 6031, "name": "OpenNegtive", "label": "WT_TrayVac_1_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-Tray盘吸附1吸附/通断(负压)"},
+        {"id": 6032, "name": "OpenAir", "label": "WT_TrayVac_1_OpenAir", "observer": "oAirState", "comment": "WT-Tray盘吸附1通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_TrayVac_2",
+      "DO": [
+        {"id": 6033, "name": "OpenPositive", "label": "WT_TrayVac_2_OpenPositive", "observer": "oPositiveState", "comment": "WT-Tray盘吸附2破真空(正压)"},
+        {"id": 6034, "name": "OpenNegtive", "label": "WT_TrayVac_2_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-Tray盘吸附2吸附/通断(负压)"},
+        {"id": 6035, "name": "OpenAir", "label": "WT_TrayVac_2_OpenAir", "observer": "oAirState", "comment": "WT-Tray盘吸附2通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_TrayVac_3",
+      "DO": [
+        {"id": 6036, "name": "OpenPositive", "label": "WT_TrayVac_3_OpenPositive", "observer": "oPositiveState", "comment": "WT-Tray盘吸附3破真空(正压)"},
+        {"id": 6037, "name": "OpenNegtive", "label": "WT_TrayVac_3_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-Tray盘吸附3吸附/通断(负压)"},
+        {"id": 6038, "name": "OpenAir", "label": "WT_TrayVac_3_OpenAir", "observer": "oAirState", "comment": "WT-Tray盘吸附3通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_TrayVac_4",
+      "DO": [
+        {"id": 6039, "name": "OpenPositive", "label": "WT_TrayVac_4_OpenPositive", "observer": "oPositiveState", "comment": "WT-Tray盘吸附4破真空(正压)"},
+        {"id": 6040, "name": "OpenNegtive", "label": "WT_TrayVac_4_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-Tray盘吸附4吸附/通断(负压)"},
+        {"id": 6041, "name": "OpenAir", "label": "WT_TrayVac_4_OpenAir", "observer": "oAirState", "comment": "WT-Tray盘吸附4通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_ChipVac",
+      "DO": [
+        {"id": 6042, "name": "OpenPositive", "label": "WT_ChipVac_OpenPositive", "observer": "oPositiveState", "comment": "WT-芯片吸附破真空(正压)"},
+        {"id": 6043, "name": "OpenNegtive", "label": "WT_ChipVac_OpenNegtive", "observer": "oNegtiveState", "comment": "WT-芯片吸附吸附/通断(负压)"},
+        {"id": 6044, "name": "OpenAir", "label": "WT_ChipVac_OpenAir", "observer": "oAirState", "comment": "WT-芯片吸附通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/ChuckVac",
+      "DO": [
+        {"id": 6045, "name": "OpenPositive", "label": "ChuckVac_OpenPositive", "observer": "oPositiveState", "comment": "吸盘吸附破真空(正压)"},
+        {"id": 6046, "name": "OpenNegtive", "label": "ChuckVac_OpenNegtive", "observer": "oNegtiveState", "comment": "吸盘吸附吸附/通断(负压)"},
+        {"id": 6047, "name": "OpenAir", "label": "ChuckVac_OpenAir", "observer": "oAirState", "comment": "吸盘吸附通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/ChipVac",
+      "DO": [
+        {"id": 6048, "name": "OpenPositive", "label": "ChipVac_OpenPositive", "observer": "oPositiveState", "comment": "芯片吸附破真空(正压)"},
+        {"id": 6049, "name": "OpenNegtive", "label": "ChipVac_OpenNegtive", "observer": "oNegtiveState", "comment": "芯片吸附吸附/通断(负压)"},
+        {"id": 6050, "name": "OpenAir", "label": "ChipVac_OpenAir", "observer": "oAirState", "comment": "芯片吸附通大气"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_Bonding/M_BS",
+      "AI": [
+        {"id": 502, "name": "oActualForce", "label": "M_BS_oActualForce", "comment": "键合实际压力（内部号段，GUI不显示）"},
+        {"id": 503, "name": "oTCBposition", "label": "M_BS_oTCBposition", "comment": "键合TCB当前位置/塌陷位置反馈（内部号段，GUI不显示）"}
+      ],
+      "DI": [
+        {"id": 2504, "name": "isPositionControl", "label": "M_BS_isPositionControl", "comment": "键合位置控模式反馈（内部号段，GUI不显示）"},
+        {"id": 2506, "name": "oInBondingPos", "label": "M_BS_oInBondingPos", "comment": "搜位进行中反馈（true=搜位中，1920观察量名，内部号段，GUI不显示）"}
+      ],
+      "AO": [
+        {"id": 4000, "name": "SetSearchForce", "label": "M_BS_SetSearchForce", "observer": "oForce_SearchPos", "comment": "搜位力设定（值来自mc.process.bondProc.searchForce，1920名）"},
+        {"id": 4001, "name": "SetSearchPosSpeed", "label": "M_BS_SetSearchPosSpeed", "observer": "SearchPos_Spd", "comment": "搜位速度设定（值来自mc.process.bondProc.searchSpeed，1920名）"}
+      ],
+      "DO": [
+        {"id": 6051, "name": "ResetForceSensor", "label": "M_BS_ResetForceSensor", "observer": "oForceSensorReset", "comment": "键合压力传感器清零（1920名）"}
+      ],
+      "Cmd": [
+        {"id": 10510, "name": "BondingByForceManual", "label": "M_BS_BondingByForceManual", "args": ["Force", "Speed"], "comment": "定压力键合下行：压到目标力(内部号段，GUI不显示)"},
+        {"id": 10511, "name": "SetTCBrate", "label": "M_BS_SetTCBrate", "args": ["Rate"], "comment": "位置控：塌陷跟随速率（内部号段，GUI不显示）"},
+        {"id": 10512, "name": "SetPositionControl", "label": "M_BS_SetPositionControl", "args": ["ZeroTemp", "BreakPosition"], "comment": "位置控模式触发：零位温度+塌陷位置（内部号段，GUI不显示）"},
+        {"id": 10513, "name": "PositionControl_HeatUp", "label": "M_BS_PositionControl_HeatUp", "args": ["C1_Up", "TCB_TargetPosition", "C1_Dw"], "comment": "恒温位置控：C1上速度/目标位置/C1下速度（内部号段，GUI不显示）"},
+        {"id": 10514, "name": "PositionControl_HeatDown", "label": "M_BS_PositionControl_HeatDown", "args": ["C2_Up", "TCB_TargetPosition", "C2_Dw"], "comment": "降温位置控：C2上阈值/目标位置/C2下阈值（内部号段，GUI不显示）"},
+        {"id": 10515, "name": "StopPositionControl", "label": "M_BS_StopPositionControl", "args": [], "comment": "关闭位置控（内部号段，GUI不显示）"},
+        {"id": 10517, "name": "SetBondSteadyTime", "label": "M_BS_SetBondSteadyTime", "args": ["SteadyTime"], "comment": "定力键合稳定判定时间（PLC侧力稳定判定用，1920名）"},
+        {"id": 10518, "name": "StopForceManualBonding", "label": "M_BS_StopForceManualBonding", "args": [], "comment": "结束定力下行/关闭力控（1920名）"},
+        {"id": 10519, "name": "SearchBondPos", "label": "M_BS_SearchBondPos", "args": [], "comment": "开始搜位（1920名）"},
+        {"id": 10520, "name": "SearchBondPosDone", "label": "M_BS_SearchBondPosDone", "args": [], "comment": "结束搜位（1920名）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/M_Heater/PulseHeat_Up",
+      "AI": [
+        {"id": 500, "name": "oCurTemp", "label": "PulseHeat_Up_oCurTemp", "comment": "上吸盘当前温度（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/M_Heater/Heat_Dw",
+      "AI": [
+        {"id": 501, "name": "oCurTemp", "label": "Heat_Dw_oCurTemp", "comment": "下吸盘当前温度（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_PowerSwitch",
+      "DI": [
+        {"id": 2500, "name": "iSystemOn", "label": "M_PowerSwitch_iSystemOn", "comment": "System ON：系统上电（内部号段，GUI不显示）"},
+        {"id": 2501, "name": "iSystemOff", "label": "M_PowerSwitch_iSystemOff", "comment": "System OFF：系统断电（内部号段，GUI不显示）"},
+        {"id": 2502, "name": "iLightOn", "label": "M_PowerSwitch_iLightOn", "comment": "照明灯：照明灯开关（内部号段，GUI不显示）"},
+        {"id": 2503, "name": "iMuteOn", "label": "M_PowerSwitch_iMuteOn", "comment": "Mute：静音（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_SLAM/E_SignalTower/GreenLight",
+      "DO": [
+        {"id": 6500, "name": "oLightOn", "label": "GreenLight_oLightOn", "observer": "oLightOn", "comment": "灯塔_绿灯（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_SLAM/E_SignalTower/YellowLight",
+      "DO": [
+        {"id": 6501, "name": "oLightOn", "label": "YellowLight_oLightOn", "observer": "oLightOn", "comment": "灯塔_黄灯（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_SLAM/E_SignalTower/RedLight",
+      "DO": [
+        {"id": 6502, "name": "oLightOn", "label": "RedLight_oLightOn", "observer": "oLightOn", "comment": "灯塔_红灯（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_SLAM/E_SignalTower/BlueLight",
+      "DO": [
+        {"id": 6503, "name": "oLightOn", "label": "BlueLight_oLightOn", "observer": "oLightOn", "comment": "灯塔_蓝灯（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_SLAM/E_SignalTower/Buzzer",
+      "DO": [
+        {"id": 6504, "name": "oBuzzOn", "label": "Buzzer_oBuzzOn", "observer": "oBuzzOn", "comment": "灯塔_蜂鸣器（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/PulseHeat_Up",
+      "Cmd": [
+        {"id": 10500, "name": "SetTargetTempWithPlan", "label": "PulseHeat_Up_SetTargetTempWithPlan", "args": ["Steady_Time", "Temperature"], "comment": "开始加热（内部号段，GUI不显示）"},
+        {"id": 10501, "name": "StopTargetTempWithPlan", "label": "PulseHeat_Up_StopTargetTempWithPlan", "args": [], "comment": "停止加热（内部号段，GUI不显示）"},
+        {"id": 10502, "name": "StartPreHeat", "label": "PulseHeat_Up_StartPreHeat", "args": [], "comment": "开始预热（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/Heat_Dw",
+      "Cmd": [
+        {"id": 10503, "name": "SetTargetTempWithPlan", "label": "Heat_Dw_SetTargetTempWithPlan", "args": ["Steady_Time", "Temperature"], "comment": "开始加热（内部号段，GUI不显示）"},
+        {"id": 10504, "name": "StopTargetTempWithPlan", "label": "Heat_Dw_StopTargetTempWithPlan", "args": [], "comment": "停止加热（内部号段，GUI不显示）"}
+      ]
+    },
+    {
+      "fullPath": "3000_1_Controller/SystemMachine/SS_Bonding/M_ES",
+	  "DO": [
+        { "id": 6505, "name": "ES_Start", "label": "ES_Start", "observer": "oStart" , "comment": "蓝膜台开始（内部号段，GUI不显示）"},
+        { "id": 6506, "name": "ES_Stop",  "label": "ES_Stop",  "observer": "oStop"  , "comment": "蓝膜台停止（内部号段，GUI不显示）"}
+      ],
+	  
+      "Cmd": [
+        {"id": 10507, "name": "ES_Reset", "comment": "蓝膜台重置（内部号段，GUI不显示）"},
+        {"id": 10508, "name": "ES_GvieBackDie", "comment": "一键退片（内部号段，GUI不显示；表中拼写即 Gvie）"},
+        {"id": 10509, "name": "ES_MoveToNextChip", "comment": "移动至下一芯片（内部号段，GUI不显示）"}
+      ]
+    },
+	{
+      "fullPath": "3000_1_Controller/SystemMachine/SS_ME/M_AIR/WT_WaferVac/PressureSwitch",
+
+      "AI": [
+        { "id": 504, "name": "oValue" , "label": "WT_WaferVac_PressureSwitch_oValue", "comment": "WT-晶圆吸附（压强）"}
+      ]
+    }
+  ]
+}

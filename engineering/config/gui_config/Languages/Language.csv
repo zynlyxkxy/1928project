@@ -1,0 +1,958 @@
+key,English,中文
+Name,Name,名称
+Value,Value,数值
+Min,Min,最小值
+Max,Max,最大值
+Unit,Unit,单位
+Type,Type,类型
+Brief,Brief,描述
+Key,Key,键
+MC Production,MC Production,MC 生产
+Basic Information,Basic Information,基本信息
+Executed Constant,Executed Constant,已执行常数
+Constant Name:,Constant Name:,常数名称:
+Select File,Select File,选择文件
+View Actived Constant,View Actived Constant,查看激活常数
+New,New,新建
+Cancel,Cancel,取消
+Copy,Copy,复制
+Delete,Delete,删除
+Activate,Activate,激活
+Import,Import,导入
+Export,Export,导出
+Verify,Verify,校验
+Name:,Name:,名称:
+Source:,Source:,来源:
+Version:,Version:,版本:
+Creator:,Creator:,创建者:
+Created Time:,Created Time:,创建时间:
+Modifier:,Modifier:,修改者:
+Modified Time:,Modified Time:,修改时间:
+Executer:,Executer:,执行者:
+Executed Time:,Executed Time:,执行时间:
+Constant Type:,Constant Type:,常数类型:
+Executed,Executed,已执行
+UnExecuted,UnExecuted,未执行
+Description:,Description:,描述:
+OK,OK,确定
+Close,Close,关闭
+Name length must be 1~50,Name length must be 1~50,名称长度必须为 1~50
+Constant name [%1] already exists.,Constant name [%1] already exists.,常数名称 [%1] 已存在
+A non-activated constant cannot be renamed to the activated name [%1].,A non-activated constant cannot be renamed to the activated name [%1].,未激活的常数不能改名为已激活名称 [%1]
+Constant name already exists.,Constant name already exists.,常数名称已存在
+Create constant failed.,Create constant failed.,创建常数失败
+Create succeeded.,Create succeeded.,创建成功
+Activated constant cannot be edited.,Activated constant cannot be edited.,已激活的常数不能编辑
+Validation failed:,Validation failed:,校验失败:
+Save failed.,Save failed.,保存失败
+Save succeeded.,Save succeeded.,保存成功
+Rename failed.,Rename failed.,重命名失败
+Copy Constant,Copy Constant,复制常数
+New Name:,New Name:,新名称:
+Copy failed (target name may already exist).,Copy failed (target name may already exist).,复制失败(目标名称可能已存在)
+Activated constant is locked.,Activated constant is locked.,已激活的常数已锁定
+Delete constant [%1]?,Delete constant [%1]?,删除常数 [%1]?
+[%1] is activated and locked.,[%1] is activated and locked.,[%1] 已激活并锁定
+Activate constant [%1]?,Activate constant [%1]?,激活常数 [%1]?
+Import Constant,Import Constant,导入常数
+Cannot open file.,Cannot open file.,无法打开文件
+Import file exceeds 100KB.,Import file exceeds 100KB.,导入文件超过 100KB
+Import failed.,Import failed.,导入失败
+Import failed: %1,Import failed: %1,导入失败: %1
+Export Constant,Export Constant,导出常数
+Export failed.,Export failed.,导出失败
+Cannot write file.,Cannot write file.,无法写入文件
+Filter:,Filter:,筛选:
+Constants,Constants,常数
+Previous,Previous,上一个
+Next,Next,下一个
+Rm Production,Rm Production,RM 生产
+No recipe selected,No recipe selected,未选择处方
+Recipe,Recipe,处方
+Recipe: %1,Recipe: %1,处方: %1
+Manage,Manage,管理
+IRE Recipe,IRE Recipe,IRE 处方
+Open,Open,打开
+Save As,Save As,另存为
+Release,Release,发布
+UnRelease,UnRelease,取消发布
+Search,Search,搜索
+Save Header,Save Header,保存表头
+Please save before switching,Please save before switching,请先保存再切换
+The name "%1" already exists. Please use a different name.,The name "%1" already exists. Please use a different name.,名称 "%1" 已存在，请使用其他名称
+Unrelease recipe operation timed out,Unrelease recipe operation timed out,取消发布处方操作超时
+Save header failed: recipe not found on server,Save header failed: recipe not found on server,保存表头失败:服务器上未找到该处方
+Save header failed,Save header failed,保存表头失败
+Delete recipe operation timed out,Delete recipe operation timed out,删除处方操作超时
+Export recipe operation timed out,Export recipe operation timed out,导出处方操作超时
+Import recipe operation timed out,Import recipe operation timed out,导入处方操作超时
+Import save operation timed out,Import save operation timed out,导入保存操作超时
+Copy recipe operation timed out,Copy recipe operation timed out,复制处方操作超时
+Copy save operation timed out,Copy save operation timed out,复制保存操作超时
+Export Recipe,Export Recipe,导出处方
+Import Recipe,Import Recipe,导入处方
+Version,Version,版本
+Author,Author,作者
+   Create Time   ,   Create Time   ,创建时间
+   Release Time   ,   Release Time   ,发布时间
+Released By,Released By,发布者
+  Last Modified  ,  Last Modified  ,最后修改时间
+Modified By,Modified By,修改者
+Description,Description,描述
+Authority Management,Authority Management,权限管理
+Built-in level cannot be deleted,Built-in level cannot be deleted,预置等级不能删除
+Built-in object cannot be modified,Built-in object cannot be modified,预置对象不能修改
+Built-in user cannot be deleted,Built-in user cannot be deleted,预置用户不能删除
+Built-in user cannot be edited,Built-in user cannot be edited,预置用户不能编辑
+Built-in,Built-in,预置
+Change Password - %1,Change Password - %1,修改密码 - %1
+Change Password,Change Password,修改密码
+Confirm New Password,Confirm New Password,确认新密码
+Confirm Password,Confirm Password,确认密码
+Confirm deleting level %1? Users of this level will be migrated to %2,Confirm deleting level %1? Users of this level will be migrated to %2,确认删除等级 %1?该等级用户将迁移至 %2
+Confirm deleting user %1?,Confirm deleting user %1?,确认删除用户 %1?
+Create User,Create User,创建用户
+Duplicate name,Duplicate name,名称重复
+Edit User - %1,Edit User - %1,编辑用户 - %1
+Edit User,Edit User,编辑用户
+Function Module,Function Module,功能模块
+Invalid parameter,Invalid parameter,参数无效
+Leave blank to keep the current password,Leave blank to keep the current password,留空则保持当前密码
+Level Name,Level Name,等级名称
+Level Permissions,Level Permissions,等级权限
+Level created successfully,Level created successfully,等级创建成功
+Level deleted successfully,Level deleted successfully,等级删除成功
+Level modified successfully,Level modified successfully,等级修改成功
+Level,Level,等级
+Level:,Level:,等级:
+Logged out,Logged out,已退出登录
+Logout failed: %1,Logout failed: %1,退出登录失败: %1
+Main Navigation,Main Navigation,主导航
+Manage Levels,Manage Levels,管理等级
+Migrate to:,Migrate to:,迁移至:
+New Password,New Password,新密码
+New password must be at least 6 characters,New password must be at least 6 characters,新密码长度至少 6 位
+New password must differ from the old one,New password must differ from the old one,新密码不能与旧密码相同
+No operation permission,No operation permission,无操作权限
+No permission to delete this user,No permission to delete this user,无权限删除该用户
+No permission to edit this user,No permission to edit this user,无权限编辑该用户
+No,No,否
+Object does not exist,Object does not exist,对象不存在
+Old Password,Old Password,旧密码
+Operation failed,Operation failed,操作失败
+Password changed successfully,Password changed successfully,密码修改成功
+Password must be at least 6 characters,Password must be at least 6 characters,密码长度至少 6 位
+Password,Password,密码
+Password:,Password:,密码:
+Permissions saved successfully,Permissions saved successfully,权限保存成功
+Please enter a level name,Please enter a level name,请输入等级名称
+Please enter password to unlock,Please enter password to unlock,请输入密码解锁
+Please enter the password again,Please enter the password again,请再次输入密码
+Please select a level to delete,Please select a level to delete,请选择要删除的等级
+Please select a level to edit,Please select a level to edit,请选择要编辑的等级
+Please select a user to delete,Please select a user to delete,请选择要删除的用户
+Please select a user to edit,Please select a user to edit,请选择要编辑的用户
+Press and hold to view plaintext,Press and hold to view plaintext,按住查看明文
+Quantity limit reached,Quantity limit reached,已达数量上限
+Screen Locked,Screen Locked,屏幕已锁定
+Search:,Search:,搜索:
+Sub Navigation,Sub Navigation,子导航
+SuperAdmin level cannot be edited,SuperAdmin level cannot be edited,SuperAdmin 等级不能编辑
+Switch User,Switch User,切换用户
+The two new passwords do not match,The two new passwords do not match,两次输入的新密码不一致
+The two passwords do not match,The two passwords do not match,两次输入的密码不一致
+Unlock failed,Unlock failed,解锁失败
+Unlock,Unlock,解锁
+User Information,User Information,用户信息
+User Management,User Management,用户管理
+User Name,User Name,用户名
+User Name:,User Name:,用户名:
+User deleted successfully,User deleted successfully,用户删除成功
+User name length must be 3-20 characters,User name length must be 3-20 characters,用户名长度必须为 3-20 个字符
+Wrong password,Wrong password,密码错误
+Yes,Yes,是
+6-32 characters,6-32 characters,6-32 个字符
+Delete User,Delete User,删除用户
+(No Wafer Report),(No Wafer Report),无 Wafer 报告
+Back to List,Back to List,返回列表
+BatchID,BatchID,批次号
+Browse...,Browse...,浏览...
+Cancel Export,Cancel Export,取消导出
+Choose export directory,Choose export directory,选择导出目录
+Detail,Detail,详情
+Details,Details,详情
+End-Time,End-Time,结束时间
+Export Path:,Export Path:,导出路径:
+Export Settings,Export Settings,导出设置
+Export finished: %1 succeeded,Export finished: %1 succeeded,导出完成: %1 成功
+Export finished: %1 succeeded - %2 failed. %3,Export finished: %1 succeeded - %2 failed. %3,导出完成: %1 成功，%2 失败。%3
+Exporting %1/%2: %3,Exporting %1/%2: %3,正在导出 %1/%2: %3
+Failed to read report file,Failed to read report file,读取报告文件失败
+Failed-Num,Failed-Num,失败数量
+Finished-Num,Finished-Num,完成数量
+Format:,Format:,格式:
+Input Lot ID (exact match),Input Lot ID (exact match),输入 Lot ID（精确匹配）
+Invalid export path - please choose again,Invalid export path - please choose again,无效的导出路径，请重新选择
+Loading report...,Loading report...,正在加载报告...
+Lot Report,Lot Report,Lot 报告
+MD (Original),MD (Original),MD（原始）
+No report data,No report data,无报告数据
+No.,No.,序号
+PDF,PDF,PDF
+Query Conditions,Query Conditions,查询条件
+Query Result,Query Result,查询结果
+Query by Batch ID,Query by Batch ID,按批次号查询
+Query by Recipe,Query by Recipe,按处方查询
+Query by Time,Query by Time,按时间查询
+Query result exceeds 1000 items - please narrow the scope,Query result exceeds 1000 items - please narrow the scope,查询结果超过 1000 条，请缩小范围
+Query,Query,查询
+RP Production,RP Production,RP 生产
+Report not found,Report not found,未找到报告
+Select Wafer...,Select Wafer...,选择 Wafer...
+Start-Time,Start-Time,开始时间
+Target directory already exists - overwrite?,Target directory already exists - overwrite?,目标目录已存在，是否覆盖？
+Task List,Task List,任务列表
+Total-Num,Total-Num,总数量
+Wafer Report,Wafer Report,Wafer 报告
+Wafer report not found,Wafer report not found,未找到 Wafer 报告
+to,to,至
+Abandon,Abandon,放弃
+ALARM,ALARM,告警
+Alarm Code,Alarm Code,告警代码
+Alarm Code : ,Alarm Code : ,告警代码 : 
+Are you sure to cancel the modification?,Are you sure to cancel the modification?,确定取消修改吗？
+Are you sure to delete the config?,Are you sure to delete the config?,确定删除该配置吗？
+Attention,Attention,注意
+Clear,Clear,清除
+Continue,Continue,继续
+DANGER,DANGER,危险
+Date,Date,日期
+Date Time    : ,Date Time    : ,日期时间    : 
+Description      : ,Description      : ,描述      : 
+Description  : ,Description  : ,描述  : 
+Description: ,Description: ,描述: 
+EH Production,EH Production,EH 生产
+ERROR,ERROR,错误
+Error,Error,错误
+File,File,文件
+Filter,Filter,筛选
+Handling,Handling,处理
+History,History,历史
+Line,Line,行
+Link Error Count : ,Link Error Count : ,联动错误数量 : 
+Linked Error,Linked Error,联动错误
+Linked Error :,Linked Error :,联动错误 :
+Message,Message,消息
+Message          : ,Message          : ,消息          : 
+Message      : ,Message      : ,消息      : 
+Message    : ,Message    : ,消息    : 
+Please select a config.,Please select a config.,请选择配置
+Please select an item!,Please select an item!,请选择一项！
+Record Time,Record Time,记录时间
+Refresh,Refresh,刷新
+Release Time,Release Time,发布时间
+Report,Report,报告
+Report Count     : ,Report Count     : ,报告数量     : 
+Report Time,Report Time,报告时间
+Reset,Reset,重置
+Retry,Retry,重试
+Search by alarm code...,Search by alarm code...,按告警代码搜索...
+Severity,Severity,严重级别
+Skip,Skip,跳过
+Task,Task,任务
+Task             : ,Task             : ,任务             : 
+Task         : ,Task         : ,任务         : 
+The configuration of alarm has been saved successfully.,The configuration of alarm has been saved successfully.,告警配置保存成功
+The configuration of alarm has been saved unsuccessfully.,The configuration of alarm has been saved unsuccessfully.,告警配置保存失败
+There is no config to edit.,There is no config to edit.,没有可编辑的配置
+Trouble Shooting,Trouble Shooting,故障处理
+WARNING,WARNING,警告
+Warning,Warning,警告
+Subsystem Production,Subsystem Production,分系统生产
+Subsystem Communication Test (Instance: %1),Subsystem Communication Test (Instance: %1),分系统通信测试（实例: %1）
+Subsystem RPC Tools,Subsystem RPC Tools,分系统 RPC 工具
+Sync Test1,Sync Test1,同步测试 1
+Async Test1,Async Test1,异步测试 1
+Clear Log,Clear Log,清除日志
+Job,Job,作业
+System,System,系统
+Recipes,Recipes,配方
+Data,Data,数据
+Setup,Setup,设置
+Metrology,Metrology,计量
+Alarms,Alarms,告警
+Help,Help,帮助
+Production,Production,生产
+ST,ST,信号塔
+Reticle,Reticle,掩膜版
+Trace,Trace,跟踪
+Statistics,Statistics,统计
+DataCenter,DataCenter,数据中心
+Constant,Constant,常数
+Config,Config,配置
+Authority,Authority,权限
+Maintenance,Maintenance,维护
+Update,Update,更新
+EH,EH,事件处理
+About,About,关于
+Job - Production,Job - Production,作业 - 生产
+System - SM,System - SM,系统 - SM
+Metrology - Metrology,Metrology - Metrology,计量 - 计量
+Metrology - Maintenance,Metrology - Maintenance,计量 - 维护
+Single Script,Single Script,单脚本
+Queue,Queue,队列
+Data - PS,Data - PS,数据 - PS
+Help - User Manual,Help - User Manual,帮助 - 用户手册
+Help - About ISTAR,Help - About ISTAR,帮助 - 关于 ISTAR
+Offline,Offline,离线
+Machine：,Machine：,机器：
+Version：,Version：,版本：
+Remote State：,Remote State：,远程状态：
+User:,User:,用户:
+Export failed: %1/%2,Export failed: %1/%2,导出失败: %1/%2
+Export failed,Export failed,导出失败
+Generating PDF: %1,Generating PDF: %1,正在生成 PDF: %1
+MC,MC,机器常数
+Process,Process,单步流程
+Motion Stage,Motion Stage,运动台
+Chip,Chip,芯片
+Wafer,Wafer,晶圆
+AlignStage,AlignStage,对准台
+BondArm,BondArm,键合模块
+ChipTransfer,ChipTransfer,芯片传输
+SiliconStage,SiliconStage,硅片台
+alignStage,alignStage,对准台
+alignStageX,alignStageX,对准台X
+alignStageY,alignStageY,对准台Y
+alignStageZ,alignStageZ,对准台Z
+bondHead,bondHead,键合头
+bondHeadRx,bondHeadRx,键合头Rx
+bondHeadRy,bondHeadRy,键合头Ry
+bondHeadZ,bondHeadZ,键合头Z
+cfId,cfId,光谱共焦ID
+cfToCamOffsetXY,cfToCamOffsetXY,光谱共焦-相机偏移XY
+chromaticConfocal,chromaticConfocal,光谱共焦
+downChromaticConfocal,downChromaticConfocal,下光谱共焦
+downFineAlignCamera,downFineAlignCamera,下精对准相机
+epin,epin,顶针
+epinZ,epinZ,顶针Z
+filpModule,filpModule,翻转模块
+filpModuleRx,filpModuleRx,翻转模块Rx
+filpModuleRz,filpModuleRz,翻转模块Rz
+filpModuleX,filpModuleX,翻转模块X
+filpModuleZ,filpModuleZ,翻转模块Z
+fineAlignCamera,fineAlignCamera,精对准相机
+punchPin,punchPin,顶针
+punchPinZ,punchPinZ,顶针Z
+siliconStageRz,siliconStageRz,硅片台Rz
+siliconStageX,siliconStageX,硅片台X
+siliconStageY,siliconStageY,硅片台Y
+upChromaticConfocal,upChromaticConfocal,上光谱共焦
+x,x,X
+x_,x_,X
+y,y,Y
+y_,y_,Y
+acc,acc,加速度
+moveTimeOut,moveTimeOut,移动超时
+softLimitPositive,softLimitPositive,正向软限位
+softLimitNegative,softLimitNegative,负向软限位
+settlingTime,settlingTime,整定时间
+tolerance,tolerance,误差
+vel,vel,速度
+Start,Start,开始
+Stop,Stop,停止
+Clear All,Clear All,清空
+Recipe Select,Recipe Select,处方选择
+Recipe Name,Recipe Name,处方名称
+Recipe Description,Recipe Description,描述信息
+Recipe Preview,Recipe Preview,处方预览
+Chip Thickness:,Chip Thickness:,芯片厚度:
+Chip Width:,Chip Width:,芯片宽度:
+Chip Length:,Chip Length:,芯片长度:
+Wafer Size:,Wafer Size:,晶圆尺寸:
+Wafer Thickness:,Wafer Thickness:,晶圆厚度:
+Wafer Notch Angle:,Wafer Notch Angle:,晶圆缺口角度:
+Expansion Depth:,Expansion Depth:,扩膜深度:
+Max Pressure:,Max Pressure:,最大压力:
+Max Temperature:,Max Temperature:,最高温度:
+Chuck Level,Chuck Level,吸盘调平
+Wafer Level Data Collect,Wafer Level Data Collect,晶圆调平数据采集
+Chip Calibration,Chip Calibration,芯片标定
+Coarse Level,Coarse Level,粗调平
+Fine Level,Fine Level,精调平
+Down Level Point Select,Down Level Point Select,下调平点位选择
+Up Level Point Select,Up Level Point Select,上调平点位选择
+Fine Align,Fine Align,精对准
+Bond Curve,Bond Curve,键合曲线
+Bond Parameters,Bond Parameters,键合参数
+Bond Force,Bond Force,键合力
+Command,Command,命令
+Y Axis Display,Y Axis Display,纵轴显示控制
+Move To Target,Move To Target,移动到目标位置
+Confirm,Confirm,确认完毕
+Nominal Coord XY,Nominal Coord XY,名义坐标 XY
+Actual Coord,Actual Coord,实际坐标
+Actual Coord XY,Actual Coord XY,实际坐标 XY
+Pixel Coord,Pixel Coord,像素坐标
+Pixel Coord XY,Pixel Coord XY,像素坐标 XY
+Wafer Stage XY,Wafer Stage XY,硅片台 XY
+Align Stage XY,Align Stage XY,对准台 XY
+Down Confocal Value,Down Confocal Value,下共焦值
+Up Confocal Value,Up Confocal Value,上共焦值
+Down Chuck Measured Value:,Down Chuck Measured Value:,下吸盘测量值:
+Up Chuck Measured Value:,Up Chuck Measured Value:,上吸盘测量值:
+Up Chip Measured Value:,Up Chip Measured Value:,上芯片测量值:
+Down Chip Measured Value:,Down Chip Measured Value:,下芯片测量值:
+Down Wafer Measured Value:,Down Wafer Measured Value:,下晶圆测量值:
+Up Chip Position:,Up Chip Position:,上芯片位置:
+Down Chip Position:,Down Chip Position:,下芯片位置:
+Up Chip Actual Coord XY,Up Chip Actual Coord XY,上芯片实际坐标 XY
+Down Chip Actual Coord XY,Down Chip Actual Coord XY,下芯片实际坐标 XY
+Up Chip Pixel Coord XY,Up Chip Pixel Coord XY,上芯片像素坐标 XY
+Down Chip Pixel Coord XY,Down Chip Pixel Coord XY,下芯片像素坐标 XY
+Up Chuck Temperature,Up Chuck Temperature,上吸盘温度
+Down Chuck Temperature,Down Chuck Temperature,下吸盘温度
+RxRy Level Threshold:,RxRy Level Threshold:,RxRy调平阈值:
+RxRyZ Level Threshold:,RxRyZ Level Threshold:,RxRyZ调平阈值:
+XY Align Threshold:,XY Align Threshold:,XY对准阈值:
+Bond Head Compensation:,Bond Head Compensation:,键合头补偿值:
+Align Stage Compensation:,Align Stage Compensation:,对准台补偿值:
+Calculated Compensation:,Calculated Compensation:,计算结果补偿值:
+Elapsed Time:,Elapsed Time:,运行耗时:
+Up Chip Info,Up Chip Info,上芯片信息
+Down Chip Info,Down Chip Info,下芯片信息
+Blue Film Wafer Info,Blue Film Wafer Info,蓝膜晶圆信息
+Down Wafer Info,Down Wafer Info,下晶圆信息
+Operation Steps,Operation Steps,操作步骤说明
+Result,Result,结果
+Capture & Recognize,Capture & Recognize,拍照识别
+Wafer recipe load failed!,Wafer recipe load failed!,晶圆处方加载失败！
+Chip recipe load failed!,Chip recipe load failed!,芯片处方加载失败！
+Add,Add,新增
+Align,Align,对准
+Align Check Times:,Align Check Times:,核查对准次数:
+Align Points,Align Points,对准点位
+Align Settings,Align Settings,对准设置
+Auto Process Align Result:,Auto Process Align Result:,自动流程对准结果确认:
+Bond Head,Bond Head,键合头
+Bond Head Heating Selection,Bond Head Heating Selection,键合头加热选择
+Bond Initial Position,Bond Initial Position,键合初始位
+Bond Initial Position mm,Bond Initial Position mm,键合初始位 mm
+Bond Point Selection,Bond Point Selection,键合选点
+Bond Point Settings,Bond Point Settings,键合点位设置
+Bonding,Bonding,键合中
+Bonding Process,Bonding Process,键合工序
+Chip Center and Wafer Center Coincide,Chip Center and Wafer Center Coincide,芯片和晶圆中心重合
+Chip Corner and Wafer Center Coincide,Chip Corner and Wafer Center Coincide,芯片拐角和晶圆中心重合
+Chip Pitch (X):,Chip Pitch (X):,芯片间距（X方向）:
+Chip Pitch (Y):,Chip Pitch (Y):,芯片间距（Y方向）:
+Chip Recipe:,Chip Recipe:,芯片处方:
+Chuck Leveling,Chuck Leveling,吸盘调平
+Chuck Leveling Result Tolerance Range,Chuck Leveling Result Tolerance Range,吸盘调平结果公差范围
+Coarse Leveling Points,Coarse Leveling Points,粗调平点位
+Command Selection,Command Selection,命令选择
+Custom,Custom,自定义
+Data has been modified and not saved yet,Data has been modified and not saved yet,有数据被修改，尚未保存
+Disable Force Control,Disable Force Control,关闭力控制
+Down,Down,下
+bond_Down,bond_Down,下
+Down Align Point Search,Down Align Point Search,下对准点位搜索
+Down Chip:,Down Chip:,下芯片:
+Down Chuck Leveling Points,Down Chuck Leveling Points,下吸盘调平点位
+Down Leveling Points,Down Leveling Points,下调平点位
+Down Template Name,Down Template Name,下模板名
+Edit Bond Points,Edit Bond Points,编辑点位
+Fine Align Result Tolerance Range,Fine Align Result Tolerance Range,精对准结果公差范围
+Fine Leveling Check Times:,Fine Leveling Check Times:,核查精调平次数:
+Fine Leveling Result Tolerance Range,Fine Leveling Result Tolerance Range,精调平结果公差范围
+Force Control,Force Control,力控制
+Hold Time,Hold Time,保持时间
+Layout Mode:,Layout Mode:,布局模式:
+Level and Focus,Level and Focus,调平调焦
+Leveling Focal Plane Offset,Leveling Focal Plane Offset,调平焦面偏执
+Leveling Offset Rx:,Leveling Offset Rx:,调平偏执Rx:
+Leveling Offset Ry:,Leveling Offset Ry:,调平偏执Ry:
+Leveling Settings,Leveling Settings,调平设置
+Lower Wafer Edit Mode:,Lower Wafer Edit Mode:,下晶圆编辑模式:
+Material Info,Material Info,物料信息
+Max Force N,Max Force N,最大压力 N
+Max Temperature ℃,Max Temperature ℃,最高温度 ℃
+Min Force N,Min Force N,最小压力 N
+Min Temperature ℃,Min Temperature ℃,最低温度 ℃
+Mode Selection:,Mode Selection:,模式选择:
+Move Down,Move Down,下移
+Move Up,Move Up,上移
+Multi,Multi,多片
+Notice,Notice,提示
+One Chip,One Chip,一种芯片
+Operation Mode,Operation Mode,运行模式
+Operation Mode:,Operation Mode:,运行模式:
+Please set both to the same value,Please set both to the same value,请将两者设为相同值。
+Please set the timeout greater than %1 s or the steady time less than %2 s,Please set the timeout greater than %1 s or the steady time less than %2 s,请将超时时间设为大于 %1 s，或将稳定时间设为小于 %2 s。
+Precision,Precision,精度
+Preview,Preview,预览
+Recipe verification failed,Recipe verification failed,处方校验未通过
+Recipe verification passed,Recipe verification passed,处方校验通过。
+Save Bond Points,Save Bond Points,保存选点
+Search Circles:,Search Circles:,搜索圈数:
+Select All,Select All,全选
+Selected Point Count,Selected Point Count,已选点数量
+Simulation Curve,Simulation Curve,模拟曲线
+Single,Single,单片
+Single Chip Edit,Single Chip Edit,单个芯片编辑
+Single Step Search Height:,Single Step Search Height:,单步搜索高度:
+Single Step Search Width:,Single Step Search Width:,单步搜索宽度:
+Speed mm/s,Speed mm/s,速率 mm/s
+Steady Time s,Steady Time s,稳定时间 s
+Target Force N,Target Force N,目标压力 N
+Target Temperature ℃,Target Temperature ℃,目标温度 ℃
+Temperature Control,Temperature Control,温度控制
+Temperature mismatch: row %1 [Wait for Temperature] target temperature (%2) != row %3 [Temperature Control] target temperature (%4),Temperature mismatch: row %1 [Wait for Temperature] target temperature (%2) != row %3 [Temperature Control] target temperature (%4),温度不一致：第 %1 行 [等待温度到达] 目标温度 (%2) != 第 %3 行 [温度控制] 目标温度 (%4)。
+Template Name,Template Name,模板名
+The selected chip recipe is unreleased or has been deleted,The selected chip recipe is unreleased or has been deleted,当前使用的芯片处方未发布或已被删除
+Throughput,Throughput,产率
+Time,Time,时间
+Timeout s,Timeout s,超时时间 s
+Up,Up,上
+bond_Up,bond_Up,上
+Up Air Cooling,Up Air Cooling,上气冷
+Up Align Point Search,Up Align Point Search,上对准点位搜索
+Up and Down,Up and Down,上和下
+bond_Up and Down,bond_Up and Down,上和下
+Up Chip:,Up Chip:,上芯片:
+Up Chuck Leveling Points,Up Chuck Leveling Points,上吸盘调平点位
+Up Leveling Points,Up Leveling Points,上调平点位
+Up Template Name,Up Template Name,上模板名
+Verify Recipe,Verify Recipe,校验处方
+Wafer Edge Length:,Wafer Edge Length:,晶圆边缘长度:
+Wafer Leveling,Wafer Leveling,晶圆调平
+Wafer Leveling Points,Wafer Leveling Points,晶圆调平点位
+Wait for Bond Force,Wait for Bond Force,等待键合力到达
+Wait for Bond Force timeout error: row %1 [Wait for Bond Force] timeout (%2 s) <= row %3 [Force Control] steady time (%4 s),Wait for Bond Force timeout error: row %1 [Wait for Bond Force] timeout (%2 s) <= row %3 [Force Control] steady time (%4 s),等待力超时设置错误：第 %1 行 [等待键合力到达] 超时时间 (%2 s) <= 第 %3 行 [力控制] 稳定时间 (%4 s)。
+Wait for Temperature,Wait for Temperature,等待温度到达
+Wait for Temperature timeout error: row %1 [Wait for Temperature] timeout (%2 s) <= row %3 [Temperature Control] steady time (%4 s),Wait for Temperature timeout error: row %1 [Wait for Temperature] timeout (%2 s) <= row %3 [Temperature Control] steady time (%4 s),等待温度超时设置错误：第 %1 行 [等待温度到达] 超时时间 (%2 s) <= 第 %3 行 [温度控制] 稳定时间 (%4 s)。
+Select Recipe,Select Recipe,请选择处方
+Target Pressure N,Target Pressure N,目标压力 N
+Dwell Time s,Dwell Time s,稳定时间 s
+Bond Initial Pos mm,Bond Initial Pos mm,键合初始位 mm
+Bond Initial Pos,Bond Initial Pos,键合初始位
+Min Pressure N,Min Pressure N,最小压力 N
+Max Pressure N,Max Pressure N,最大压力 N
+Close Force Control,Close Force Control,关闭力控制
+Bond Head Heating,Bond Head Heating,键合头加热选择
+Target Temp ℃,Target Temp ℃,目标温度 ℃
+Min Temp ℃,Min Temp ℃,最低温度 ℃
+Max Temp ℃,Max Temp ℃,最高温度 ℃
+Bond Process,Bond Process,键合工艺
+Wafer Mark Position Collect (Wafer Stage XY),Wafer Mark Position Collect (Wafer Stage XY),晶圆标记位置采集（硅片台XY）
+Wafer Stage XY Control,Wafer Stage XY Control,硅片台XY控制
+Down Wafer Mark Position 2D Diagram,Down Wafer Mark Position 2D Diagram,下晶圆标记位置 2D 示意图
+Mark not recognized,Mark not recognized,未识别到标记
+Up Chuck Level Point Collect (Align Stage XY),Up Chuck Level Point Collect (Align Stage XY),上吸盘调平点采集（对准台 XY）
+Up Chuck Level Points 2D Diagram,Up Chuck Level Points 2D Diagram,上吸盘调平点位 2D 示意图
+Down Chuck Level Point Collect (Wafer Stage XY),Down Chuck Level Point Collect (Wafer Stage XY),下吸盘调平点采集（硅片台 XY）
+Down Chuck Level Points 2D Diagram,Down Chuck Level Points 2D Diagram,下吸盘调平点位 2D 示意图
+Coarse Level Point Collect (Align Stage XY),Coarse Level Point Collect (Align Stage XY),粗调平点采集（对准台 XY）
+Coarse Level Points 2D Diagram,Coarse Level Points 2D Diagram,粗调平点位 2D 示意图
+Down Level Mark Point Recognition (Wafer Stage XY),Down Level Mark Point Recognition (Wafer Stage XY),下调平标记点识别（硅片台 XY）
+Down Level Mark Points 2D Diagram,Down Level Mark Points 2D Diagram,下调平标记点 2D 示意图
+Down level mark point not recognized,Down level mark point not recognized,下调平标记点未识别
+Up Level Mark Point Recognition (Align Stage XY),Up Level Mark Point Recognition (Align Stage XY),上调平标记点识别（对准台 XY）
+Up Level Mark Points 2D Diagram,Up Level Mark Points 2D Diagram,上调平标记点 2D 示意图
+Up level mark point not recognized,Up level mark point not recognized,上调平标记点未识别
+Up Chip Align Mark Point Recognition (Align Stage XY),Up Chip Align Mark Point Recognition (Align Stage XY),上芯片对准标记点识别（对准台 XY）
+Up Chip Align Mark Points 2D Diagram,Up Chip Align Mark Points 2D Diagram,上芯片对准标记点 2D 示意图
+Down Chip Align Mark Point Recognition (Align Stage XY),Down Chip Align Mark Point Recognition (Align Stage XY),下芯片对准标记点识别（对准台 XY）
+Down Chip Align Mark Points 2D Diagram,Down Chip Align Mark Points 2D Diagram,下芯片对准标记点 2D 示意图
+Up chip align mark not recognized,Up chip align mark not recognized,上芯片对准标记未识别
+Down chip align mark not recognized,Down chip align mark not recognized,下芯片对准标记未识别
+Up Chip Level Point Collect (Align Stage XY),Up Chip Level Point Collect (Align Stage XY),上芯片调平点采集（对准台 XY）
+Up Chip Level Points 2D Diagram,Up Chip Level Points 2D Diagram,上芯片调平点位 2D 示意图
+Down Chip Level Point Collect (Wafer Stage XY) (Precision Mode),Down Chip Level Point Collect (Wafer Stage XY) (Precision Mode),下芯片调平点采集（硅片台 XY）（精度模式）
+Down Chip Level Points 2D Diagram (Precision Mode),Down Chip Level Points 2D Diagram (Precision Mode),下芯片调平点位 2D 示意图（精度模式）
+Down Wafer Level Point Collect (Wafer Stage XY),Down Wafer Level Point Collect (Wafer Stage XY),下晶圆调平点采集（硅片台 XY）
+Down Wafer Level Points 2D Diagram,Down Wafer Level Points 2D Diagram,下晶圆调平点位 2D 示意图
+Home,Home,回零
+Move Rel,Move Rel,相对移动
+Move Abs,Move Abs,绝对移动
+InPos,InPos,到位
+Moving,Moving,移动中
+Enable,Enable,使能
+AxisName,AxisName,轴名称
+CurPos,CurPos,当前位置
+Speed,Speed,速度
+TargetPos(Abs),TargetPos(Abs),目标位置(绝对)
+TargetPos(Rel),TargetPos(Rel),目标位置(相对)
+RelHold,RelHold,相对保持
+WaferStage_XY,WaferStage_XY,硅片台 XY
+WaferStage_Rz,WaferStage_Rz,硅片台 Rz
+EPIN_Z,EPIN_Z,EPIN Z
+ArmHead_Z,ArmHead_Z,键合头 Z
+ArmHead_Rx,ArmHead_Rx,键合头 Rx
+ArmHead_Ry,ArmHead_Ry,键合头 Ry
+AlignStage_XY,AlignStage_XY,对准台 XY
+AlignStage_Z,AlignStage_Z,对准台 Z
+PunchZ,PunchZ,顶针Z
+FA_X,FA_X,翻转模块 X
+FA_Z,FA_Z,翻转模块 Z
+FA_Rx,FA_Rx,翻转模块 Rx
+FA_Rz,FA_Rz,翻转模块 Rz
+ManualForceCtl,Force Control,力控制
+WaitForManualForce,Wait for Bond Force,等待键合力到达
+TempCtl,Temperature Control,温度控制
+WaitForTemp,Wait for Temperature,等待温度到达
+HoldTime,Hold Time,保持时间
+Capture & Recognize X Bond Precision Template:,Capture & Recognize X Bond Precision Template:,拍照识别X向键合精度模板：
+Capture & Recognize Y Bond Precision Template:,Capture & Recognize Y Bond Precision Template:,拍照识别Y向键合精度模板：
+Capture & Recognize X Bar Template:,Capture & Recognize X Bar Template:,拍照识别X向棒形模板：
+Capture & Recognize Y Bar Template:,Capture & Recognize Y Bar Template:,拍照识别Y向棒形模板：
+Capture & Recognize X Trapezoid Template:,Capture & Recognize X Trapezoid Template:,拍照识别X向梯形模板：
+Capture & Recognize Y Trapezoid Template:,Capture & Recognize Y Trapezoid Template:,拍照识别Y向梯形模板：
+Capture & Recognize Circle Template Name:,Capture & Recognize Circle Template Name:,拍照识别圆形模板名：
+Enabled,Enabled,是否启用
+Enable Auto Sample,Enable Auto Sample,是否启用自动标样
+Enable Timer,Enable Timer,是否启用定时功能
+Enable Offset Mode,Enable Offset Mode,是否启用偏移模式
+Update System Compensation,Update System Compensation,是否更新系统补偿值
+Stop After Consecutive Threshold Hits,Stop After Consecutive Threshold Hits,连续满足阈值次数后是否停止
+Set Start Time:,Set Start Time:,设置开始时间：
+Bond Arm Down Position:,Bond Arm Down Position:,键合臂下降位置：
+Leveling Stage Down Height:,Leveling Stage Down Height:,调平台下降高度：
+Pick-up Wait Time:,Pick-up Wait Time:,吸取等待时间：
+Exposure Before Bonding:,Exposure Before Bonding:,键合前拍照曝光值：
+Consecutive Times Meeting Threshold:,Consecutive Times Meeting Threshold:,连续满足阈值的次数：
+Cycle Times:,Cycle Times:,循环次数：
+Update System Compensation Every N Cycles:,Update System Compensation Every N Cycles:,几轮更新一次系统补偿值：
+Upper Threshold:,Upper Threshold:,上阈值：
+Lower Threshold:,Lower Threshold:,下阈值：
+Abnormal Data Range (Absolute Value) >:,Abnormal Data Range (Absolute Value) >:,异常数据范围（绝对值）>：
+Current Step:,Current Step:,当前步骤：
+Point Data Range (Absolute Value): [,Point Data Range (Absolute Value): [,点位数据范围(绝对值)：[
+Refresh Table,Refresh Table,刷新表格
+Yellow,Yellow,黄色
+Red,Red,红色
+Export Data,Export Data,导出数据
+Point 1 X Offset,Point 1 X Offset,点位1X向偏移量
+Point 1 Y Offset,Point 1 Y Offset,点位1Y向偏移量
+Point 2 X Offset,Point 2 X Offset,点位2X向偏移量
+Point 2 Y Offset,Point 2 Y Offset,点位2Y向偏移量
+Point 3 X Offset,Point 3 X Offset,点位3X向偏移量
+Point 3 Y Offset,Point 3 Y Offset,点位3Y向偏移量
+Point 4 X Offset,Point 4 X Offset,点位4X向偏移量
+Point 4 Y Offset,Point 4 Y Offset,点位4Y向偏移量
+Point 1 Required Compensation Average (um),Point 1 Required Compensation Average (um),点位1需补偿量平均值(μm)
+Point 2 Required Compensation Average (um),Point 2 Required Compensation Average (um),点位2需补偿量平均值(μm)
+Point 3 Required Compensation Average (um),Point 3 Required Compensation Average (um),点位3需补偿量平均值(μm)
+Point 4 Required Compensation Average (um),Point 4 Required Compensation Average (um),点位4需补偿量平均值(μm)
+Average Required Compensation of 4 Points (um),Average Required Compensation of 4 Points (um),4个点位需补偿量平均值(μm)
+Parameter Settings,Parameter Settings,参数设置
+Up Chuck,Up Chuck,上吸盘
+Down Chuck,Down Chuck,下吸盘
+Flip Module,Flip Module,翻转模块
+Threshold,Threshold,阈值
+Current Pressure,Current Pressure,当前气压
+Blue Film Chip Status Diagram,Blue Film Chip Status Diagram,蓝膜片状态图
+Down Wafer Status Diagram,Down Wafer Status Diagram,下晶圆状态图
+Not Taken,Not Taken,未取走
+Taken,Taken,已取走
+Not Selected,Not Selected,未选择
+Bonded,Bonded,键合完毕
+Selected Not Bonded,Selected Not Bonded,选择但未键合
+CoarseLevel,CoarseLevel,粗调平
+DownLevelSelect,DownLevelSelect,下调平点位选择
+UpLevelSelect,UpLevelSelect,上调平点位选择
+FineLevel,FineLevel,精调平
+FineAlign,FineAlign,精对准
+Bond,Bond,键合
+AutoProcess,AutoProcess,自动流程
+Select,Select,选择
+Index,Index,序号
+Point,Point,点位
+Compensation Value,Compensation Value,补偿值
+Four Points Average Value,Four Points Average Value,四点平均值
+CapacitiveData_alignPos,CapacitiveData_alignPos,电容数据_对准位
+CapacitiveData_bondPos,CapacitiveData_bondPos,电容数据_键合位
+Auto,Auto,自动流程
+Continuous,Continuous,连续键合
+Status,Status,状态
+MCTRL_STATUS_UNKNOWN,MCTRL_STATUS_UNKNOWN,未知
+MCTRL_STATUS_LOADING,MCTRL_STATUS_LOADING,加载中
+MCTRL_STATUS_LOAD_FAIL,MCTRL_STATUS_LOAD_FAIL,加载失败
+MCTRL_STATUS_LOAD_OK,MCTRL_STATUS_LOAD_OK,加载成功
+MCTRL_STATUS_INITIALIZING,MCTRL_STATUS_INITIALIZING,初始化中
+MCTRL_STATUS_INI_FAIL,MCTRL_STATUS_INI_FAIL,初始化失败
+MCTRL_STATUS_IDLE,MCTRL_STATUS_IDLE,空闲
+MCTRL_STATUS_BUSY,MCTRL_STATUS_BUSY,执行中
+MCTRL_STATUS_ALARM,MCTRL_STATUS_ALARM,告警
+MCTRL_STATUS_DISCONNECTED,MCTRL_STATUS_DISCONNECTED,断开连接
+Permissions,Permissions,权限编辑
+Visitor,Visitor,访客
+Operator,Operator,操作员
+ProcessEngineer,ProcessEngineer,程序工程师
+EquipmentEngineer,EquipmentEngineer,设备工程师
+MCtrl Expiration Date,MCtrl Expiration Date,主控层到期时间
+GUI Expiration Date,GUI Expiration Date,GUI操作界面到期时间
+License,License,证书
+Init,Init,初始化
+Subsystem Stauts,Subsystem Stauts,子系统状态
+SubSystem,SubSystem,子系统
+Stauts,Status,状态
+ONLINE,ONLINE,在线
+OFFLINE,OFFLINE,离线
+UNKNOWN,UNKNOWN,未知
+Subsystem Status,Subsystem Status,子系统状态
+Motion1,Motion1,硅片台运动台
+Motion2,Motion2,键和模块运动台
+Motion3,Motion3,对准模块运动台
+Motion4,Motion4,芯片传输运动台
+RP,RP,报告
+RM,RM,处方
+RM2,RM2,处方2
+Vision,Vision,视觉
+CF,CF,光谱共焦
+Success,Success,成功
+Edit,Edit,编辑
+Save,Save,保存
+Chip Calibration Points,Chip Calibration Points,芯片标定点位
+Wafer Leveling Data Collect,Wafer Leveling Data Collect,晶圆调平数据收集
+Level Point for Fine Align:,Level Point for Fine Align:,调平点位是否用精对准:
+Down Wafer Load/Unload,Down Wafer Load/Unload,下晶圆上下片
+Blue Film Stage Load/Unload,Blue Film Stage Load/Unload,蓝膜台上下片
+Move To Load Position,Move To Load Position,移动到上片位
+Manual Load Complete,Manual Load Complete,手动上片完成
+Manual UnLoad Complete,Manual UnLoad Complete,手动下片完成
+Move To Pick-up Position,Move To Pick-up Position,移动到取片位
+Move To Unload Position,Move To Unload Position,移动到下片位
+Expansion and Mapping,Expansion and Mapping,扩膜与映射
+Material,Material,物料
+Checked,Checked,是
+UnChecked,UnChecked,否
+bond_Checked,bond_Checked,是
+bond_UnChecked,bond_UnChecked,否
+SM,SM,状态监控
+IO,IO,IO
+PS,PS,PS
+Test Manager,Test Manager,测试管理器
+Test Queue,Test Queue,测试队列
+System - ST,System - ST,系统 - ST
+Metrology - Test Manager,Metrology - Test Manager,计量 - 测试管理器
+Metrology - Test Queue,Metrology - Test Queue,计量 - 测试队列
+Metrology - Report,Metrology - Report,计量 - 报告
+Please select a row first,Please select a row first,请先选择一行
+At least 2 measured points are required,At least 2 measured points are required,至少需要 2 个已测量点
+Unmeasured points exist / submit anyway?,Unmeasured points exist / submit anyway?,存在未测量点 / 是否仍要提交？
+Wafer recipe info is empty!,Wafer recipe info is empty!,晶圆处方信息为空！
+Chip recipe info is empty!,Chip recipe info is empty!,芯片处方信息为空！
+result is Empty,result is Empty,结果为空
+Failed,Failed,失败
+MC load failed!,MC load failed!,机械常数加载失败！
+EH module load failed,EH module load failed,EH 模块加载失败
+EH page load failed,EH page load failed,EH 页面加载失败
+MC module load failed,MC module load failed,MC 模块加载失败
+RM module load failed,RM module load failed,RM 模块加载失败
+RP module load failed,RP module load failed,RP 模块加载失败
+UA module load failed,UA module load failed,UA 模块加载失败
+ST module load failed,ST module load failed,ST 模块加载失败
+ST module widget unavailable,ST module widget unavailable,ST 模块界面不可用
+Not authorized,Not authorized,未授权
+Set,Set,设置
+On,On,开
+Off,Off,关
+Factory Eng.,Factory Eng.,厂商工程师
+Four Points Average Value(um),Four Points Average Value(um),四点平均值(μm)
+Point1Compensation Value(um),Point1Compensation Value(um),点位1补偿值(μm)
+Point2Compensation Value(um),Point2Compensation Value(um),点位2补偿值(μm)
+Point3Compensation Value(um),Point3Compensation Value(um),点位3补偿值(μm)
+Point4Compensation Value(um),Point4Compensation Value(um),点位4补偿值(μm)
+Blue Film Chip Handover,Blue Film Chip Handover,蓝膜台芯片交接图
+Blue Film Status Diagram,Blue Film Status Diagram,蓝膜状态图
+Switch to English,Switch to English,切换到英文
+PulseHeat_Up_oCurTemp,PulseHeat_Up_oCurTemp,上吸盘当前温度
+Heat_Dw_oCurTemp,Heat_Dw_oCurTemp,下吸盘当前温度
+M_BS_oActualForce,M_BS_oActualForce,键合实际压力
+M_BS_oTCBposition,M_BS_oTCBposition,键合TCB当前位置
+WT_WaferVac_PressureSwitch_oValue,WT_WaferVac_PressureSwitch_oValue,WT-晶圆吸附压强
+M_PowerSwitch_iSystemOn,M_PowerSwitch_iSystemOn,系统上电
+M_PowerSwitch_iSystemOff,M_PowerSwitch_iSystemOff,系统断电
+M_PowerSwitch_iLightOn,M_PowerSwitch_iLightOn,照明灯开关
+M_PowerSwitch_iMuteOn,M_PowerSwitch_iMuteOn,静音
+M_BS_isPositionControl,M_BS_isPositionControl,键合位置控模式反馈
+M_BS_oInBondingPos,M_BS_oInBondingPos,搜位进行中
+M_BS_SetSearchForce,M_BS_SetSearchForce,搜位力设定
+M_BS_SetSearchPosSpeed,M_BS_SetSearchPosSpeed,搜位速度设定
+M_AS_AlignCameraTigger_1,M_AS_AlignCameraTigger_1,对准相机触发信号1
+M_AS_AlignCameraTigger_2,M_AS_AlignCameraTigger_2,对准相机触发2
+M_AS_LightOn_1,M_AS_LightOn_1,光源触发1
+M_AS_LightOn_2,M_AS_LightOn_2,光源触发2
+AS_X_Cooling_OpenPositive,AS_X_Cooling_OpenPositive,对准台1X轴气冷(正压)
+AS_X_Cooling_OpenAir,AS_X_Cooling_OpenAir,对准台1X轴气冷(通大气)
+AS_Y_Cooling_OpenPositive,AS_Y_Cooling_OpenPositive,对准台1Y轴气冷(正压)
+AS_Y_Cooling_OpenAir,AS_Y_Cooling_OpenAir,对准台1Y轴气冷(通大气)
+PulseHeatCooling_1_OpenPositive,PulseHeatCooling_1_OpenPositive,脉冲加热冷却1(正压)
+PulseHeatCooling_1_OpenAir,PulseHeatCooling_1_OpenAir,脉冲加热冷却1(通大气)
+PulseHeatCooling_2_OpenPositive,PulseHeatCooling_2_OpenPositive,脉冲加热冷却2(正压)
+PulseHeatCooling_2_OpenAir,PulseHeatCooling_2_OpenAir,脉冲加热冷却2(通大气)
+GlassCoolingIn_OpenPositive,GlassCoolingIn_OpenPositive,微晶玻璃冷却进气(正压)
+GlassCoolingIn_OpenAir,GlassCoolingIn_OpenAir,微晶玻璃冷却进气(通大气)
+GlassCoolingOut_OpenPositive,GlassCoolingOut_OpenPositive,微晶玻璃冷却出气(正压)
+GlassCoolingOut_OpenAir,GlassCoolingOut_OpenAir,微晶玻璃冷却出气(通大气)
+IonicBarPositive_OpenPositive,IonicBarPositive_OpenPositive,离子棒(正压)
+IonicBarPositive_OpenAir,IonicBarPositive_OpenAir,离子棒(通大气)
+WT_WaferVac_OpenPositive,WT_WaferVac_OpenPositive,WT-晶圆吸附破真空(正压)
+WT_WaferVac_OpenNegtive,WT_WaferVac_OpenNegtive,WT-晶圆吸附吸附/通断(负压)
+WT_WaferVac_OpenAir,WT_WaferVac_OpenAir,WT-晶圆吸附通大气
+WT_BondingVac_1_OpenPositive,WT_BondingVac_1_OpenPositive,WT-键合头吸盘吸附1破真空(正压)
+WT_BondingVac_1_OpenNegtive,WT_BondingVac_1_OpenNegtive,WT-键合头吸盘吸附1吸附/通断(负压)
+WT_BondingVac_1_OpenAir,WT_BondingVac_1_OpenAir,WT-键合头吸盘吸附1通大气
+WT_BondingVac_2_OpenPositive,WT_BondingVac_2_OpenPositive,WT-键合头吸盘吸附2破真空(正压)
+WT_BondingVac_2_OpenNegtive,WT_BondingVac_2_OpenNegtive,WT-键合头吸盘吸附2吸附/通断(负压)
+WT_BondingVac_2_OpenAir,WT_BondingVac_2_OpenAir,WT-键合头吸盘吸附2通大气
+WT_BondingVac_3_OpenPositive,WT_BondingVac_3_OpenPositive,WT-键合头吸盘吸附3破真空(正压)
+WT_BondingVac_3_OpenNegtive,WT_BondingVac_3_OpenNegtive,WT-键合头吸盘吸附3吸附/通断(负压)
+WT_BondingVac_3_OpenAir,WT_BondingVac_3_OpenAir,WT-键合头吸盘吸附3通大气
+WT_TrayVac_1_OpenPositive,WT_TrayVac_1_OpenPositive,WT-Tray盘吸附1破真空(正压)
+WT_TrayVac_1_OpenNegtive,WT_TrayVac_1_OpenNegtive,WT-Tray盘吸附1吸附/通断(负压)
+WT_TrayVac_1_OpenAir,WT_TrayVac_1_OpenAir,WT-Tray盘吸附1通大气
+WT_TrayVac_2_OpenPositive,WT_TrayVac_2_OpenPositive,WT-Tray盘吸附2破真空(正压)
+WT_TrayVac_2_OpenNegtive,WT_TrayVac_2_OpenNegtive,WT-Tray盘吸附2吸附/通断(负压)
+WT_TrayVac_2_OpenAir,WT_TrayVac_2_OpenAir,WT-Tray盘吸附2通大气
+WT_TrayVac_3_OpenPositive,WT_TrayVac_3_OpenPositive,WT-Tray盘吸附3破真空(正压)
+WT_TrayVac_3_OpenNegtive,WT_TrayVac_3_OpenNegtive,WT-Tray盘吸附3吸附/通断(负压)
+WT_TrayVac_3_OpenAir,WT_TrayVac_3_OpenAir,WT-Tray盘吸附3通大气
+WT_TrayVac_4_OpenPositive,WT_TrayVac_4_OpenPositive,WT-Tray盘吸附4破真空(正压)
+WT_TrayVac_4_OpenNegtive,WT_TrayVac_4_OpenNegtive,WT-Tray盘吸附4吸附/通断(负压)
+WT_TrayVac_4_OpenAir,WT_TrayVac_4_OpenAir,WT-Tray盘吸附4通大气
+WT_ChipVac_OpenPositive,WT_ChipVac_OpenPositive,WT-芯片吸附破真空(正压)
+WT_ChipVac_OpenNegtive,WT_ChipVac_OpenNegtive,WT-芯片吸附吸附/通断(负压)
+WT_ChipVac_OpenAir,WT_ChipVac_OpenAir,WT-芯片吸附通大气
+ChuckVac_OpenPositive,ChuckVac_OpenPositive,吸盘吸附破真空(正压)
+ChuckVac_OpenNegtive,ChuckVac_OpenNegtive,吸盘吸附吸附/通断(负压)
+ChuckVac_OpenAir,ChuckVac_OpenAir,吸盘吸附通大气
+ChipVac_OpenPositive,ChipVac_OpenPositive,芯片吸附破真空(正压)
+ChipVac_OpenNegtive,ChipVac_OpenNegtive,芯片吸附吸附/通断(负压)
+ChipVac_OpenAir,ChipVac_OpenAir,芯片吸附通大气
+GreenLight_oLightOn,GreenLight_oLightOn,灯塔_绿灯
+YellowLight_oLightOn,YellowLight_oLightOn,灯塔_黄灯
+RedLight_oLightOn,RedLight_oLightOn,灯塔_红灯
+BlueLight_oLightOn,BlueLight_oLightOn,灯塔_蓝灯
+Buzzer_oBuzzOn,Buzzer_oBuzzOn,灯塔_蜂鸣器
+M_BS_ResetForceSensor,M_BS_ResetForceSensor,键合压力传感器清零
+ES_Start,ES_Start,蓝膜台开始
+ES_Stop,ES_Stop,蓝膜台停止
+bond_TargetForceN,Target Force N,目标压力 N
+bond_SpeedMmS,Speed mm/s,速率 mm/s
+bond_SteadyTimeS,Steady Time s,稳定时间 s
+bond_BondInitialPositionMm,Bond Initial Position mm,键合初始位 mm
+bond_BondInitialPosition,Bond Initial Position,键合初始位
+bond_MinForceN,Min Force Deviation N,压力偏差下限 N
+bond_MaxForceN,Max Force Deviation N,压力偏差上限 N
+bond_TimeoutS,Timeout s,超时时间 s
+bond_DisableForceControl,Disable Force Control,关闭力控制
+bond_BondHeadHeatingSelection,Bond Head Heating Selection,键合头加热选择
+bond_TargetTemperatureC,Target Temperature ℃,目标温度 ℃
+bond_UpAirCooling,Up Air Cooling,上气冷
+bond_BondHead,Bond Head,键合头
+bond_MinTemperatureC,Min Temperature Deviation ℃,温度偏差下限 ℃
+bond_MaxTemperatureC,Max Temperature Deviation ℃,温度偏差上限 ℃
+bond_FormicAcid,Formic Acid,甲酸
+bond_ZeroTemperatureC,Zero Temperature ℃,归零温度 ℃
+bond_CollapsePositionMm,Collapse Position mm,坍塌位置 mm
+bond_TcbRateMmS,TCB Rate mm/s,TCB 速率 mm/s
+bond_KeepTempAfterCollapse,Keep Temp After Collapse,坍塌后保温
+bond_TargetPositionMm,Target Position mm,目标位置 mm
+bond_MinPositionDeviationMm,Min Position Deviation mm,位置偏差下限 mm
+bond_MaxPositionDeviationMm,Max Position Deviation mm,位置偏差上限 mm
+bond_C1UpSpeedMmS,C1 Up Speed mm/s,C1 上速度 mm/s
+bond_C1DownSpeedMmS,C1 Down Speed mm/s,C1 下速度 mm/s
+bond_DisablePositionControl,Disable Position Control,关闭位置控制
+bond_C2UpThreshold,C2 Up Threshold,C2 上阈值
+bond_C2DownThreshold,C2 Down Threshold,C2 下阈值
+bond_BreakVacuumWay,Break Vacuum Way,破真空方式
+bond_BondArmPositionMm,Relative Move Distance mm,相对移动距离 mm
+bond_BondInitialPosition_Checked,Yes,是
+bond_BondInitialPosition_UnChecked,No,否
+bond_DisableForceControl_Checked,Yes,是
+bond_DisableForceControl_UnChecked,No,否
+bond_BondHeadHeatingSelection_Up,Up,上
+bond_BondHeadHeatingSelection_Down,Down,下
+bond_BondHeadHeatingSelection_UpAndDown,Up and Down,上和下
+bond_UpAirCooling_Checked,Yes,是
+bond_UpAirCooling_UnChecked,No,否
+bond_BondHead_Up,Up,上
+bond_BondHead_Down,Down,下
+bond_BondHead_UpAndDown,Up and Down,上和下
+bond_FormicAcid_On,On,开
+bond_FormicAcid_Off,Off,关
+bond_KeepTempAfterCollapse_Checked,Yes,是
+bond_KeepTempAfterCollapse_UnChecked,No,否
+bond_DisablePositionControl_Checked,Yes,是
+bond_DisablePositionControl_UnChecked,No,否
+bond_BreakVacuumWay_OpenPositive,Open Positive,正压
+bond_BreakVacuumWay_OpenAir,Open Air,通大气
+FormicAcid,Formic Acid,甲酸
+PosCtlModeTrigger,Position Mode Trigger,位置控模式触发
+ThermostaticPosCtl,Thermostatic Position Control,恒温位置控制
+CoolingPosCtl,Cooling Position Control,冷却位置控制
+UpSuckerBreakVac,Up Sucker Break Vacuum,上吸盘破真空
+BondArmRelativeMove,Bond Arm Relative Move,键合臂相对移动
+Blue Film Not Taken,Not Taken,未取走
+Blue Film Taken,Taken,已取走
+Down Wafer Not Selected,Not Selected,未选择
+Down Wafer Bonding,Bonding,键合中
+Down Wafer Bonded,Bonded,键合完毕
+Down Wafer Selected Not Bonded,Selected Not Bonded,选择但未键合
+Camera Calibration,Camera Calibration,相机标定
+Sensor Calibration,Sensor Calibration,传感器标定
+Rotation Center Calibration,Rotation Center Calibration,旋转中心标定
+Template Name:,Template Name:,模板名称:
+Calibration Item:,Calibration Item:,标定项名称:
+TopCam,TopCam,上相机
+TopCamXYT,TopCamXYT,上相机XYT
+Camera Angle,Camera Angle,相机夹角
+X Pixel Scale,X Pixel Scale,x方向像素比
+Y Pixel Scale,Y Pixel Scale,y方向像素比
+Move (mm):,Move (mm):,位移量(mm):
+Calculate,Calculate,计算
+X Pixel Scale:,X Pixel Scale:,x方向像素比:
+Y Pixel Scale:,Y Pixel Scale:,y方向像素比:
+Rotate Angle:,Rotate Angle:,转动角度:
+Rotate,Rotate,旋转角度
+Template Center 1,Template Center 1,模板中心1
+Template Center 2,Template Center 2,模板中心2
+Template Center 3,Template Center 3,模板中心3
+Template Center 4,Template Center 4,模板中心4
+Template Center 5,Template Center 5,模板中心5
+Calculate Rotation Center,Calculate Rotation Center,计算旋转中心
+Rotation Center:,Rotation Center:,旋转中心:
+Camera Calibration Failed,Camera Calibration Failed,相机标定失败
+Camera Calibration Not Initialized,Camera Calibration Not Initialized,相机标定未初始化
+Camera ID:,Camera ID:,相机ID:
+Camera Position:,Camera Position:,相机位置:
+Top Camera,Top Camera,上相机
+Bottom Camera,Bottom Camera,下相机
+Start Calibration,Start Calibration,开始标定
+Stop Calibration,Stop Calibration,结束标定
+Initialization:,Initialization:,初始化:
+Result:,Result:,结果:
+Initialize,Initialize,初始化
+Center 1:,Center 1:,中心1:
+Center 2:,Center 2:,中心2:
+Center 3:,Center 3:,中心3:
+Center 4:,Center 4:,中心4:
+Center 5:,Center 5:,中心5:
+Take Center 1,Take Center 1,取中心1
+Take Center 2,Take Center 2,取中心2
+Take Center 3,Take Center 3,取中心3
+Take Center 4,Take Center 4,取中心4
+Take Center 5,Take Center 5,取中心5
+Initialization,Initialization,初始化
+Rotation Recognition,Rotation Recognition,旋转识别
+Initialization succeeded,Initialization succeeded,初始化成功
+Camera angle calculated,Camera angle calculated,相机夹角计算完成
+Pixel scale calculated,Pixel scale calculated,像素比计算完成
+Rotation done,Rotation done,旋转完成
+Center taken,Center taken,取中心完成
+Rotation center calculated,Rotation center calculated,旋转中心计算完成
+Calibration data saved,Calibration data saved,标定数据已保存
+Resolution X:,Resolution X:,分辨率X:
+Resolution Y:,Resolution Y:,分辨率Y:

@@ -1,0 +1,10 @@
+<ArrayOfRotateCenter>
+    <RotateCenter>
+        <SensorNumber>BottomCameraXYRz</SensorNumber>
+        <Type>RotCntType</Type>
+        <X>-4.205362846806886</X>
+        <Y>9.3227849627062405</Y>
+        <baseX>-43.238503999999999</baseX>
+        <baseY>6.8666960000000001</baseY>
+    </RotateCenter>
+</ArrayOfRotateCenter>

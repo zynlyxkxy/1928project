@@ -1,0 +1,12 @@
+# 处方类型配置
+# 相对路径的基准是配置根（PLATFORM_PATH，即 exe\config\），不是进程 cwd。
+recipeType: Recipe          # 处方类型前缀（用于生成文件名）
+recipeDir: ./rm_config/recipes/   # 处方文件存储目录（可设为 ./rm_config/recipes/Recipe/ 等子目录）
+schemaFile: rm_config/Recipe_Schema.json   # 处方 body 的 schema 定义文件（发布时校验）
+
+# 可选：按模块显式指定不同的 schema 文件（键为模块名 rm/rm2/rm3，优先级高于 schemaFile）。
+# 多实例处方结构不同时使用；不配置则所有实例共用 schemaFile。
+#schemaFiles:
+#  rm: Recipe_Schema.json
+#  rm2: Recipe_Schema_rm2.json
+#  rm3: Recipe_Schema_rm3.json

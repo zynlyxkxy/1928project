@@ -1,0 +1,60 @@
+# ============================================================
+#  1928project CI/CD：只在推送标签时构建，产物是仓库根目录的 exe\
+#
+#  触发：任意标签的 push（ICB3000M_WM-2.4.0 这种）。分支 push 不产生流水线。
+#  执行：engineering\scripts\init_update_build.bat
+#        它内部链路是 init_submodules（9 个 submodule 回到本 commit 记录的 SHA）
+#        -> build_exe（io/motion/simbridge/re/mctrl/gui + 同步 + 组装 exe\ + verify）
+#  产物：exe\ 整个目录
+#
+#  前置条件全在 runner 那台 Windows 机器上，跟 GitLab 服务器无关：
+#    - 有一个在线的 runner。注册时没打 tag 就不要加 tags:，
+#      否则 job 会永远 pending（找不到匹配的 runner）
+#    - Visual Studio（C++ 桌面工作负载）+ CMake 在 PATH
+#    - Qt5 已安装，QTDIR 指向它的根目录
+#    - 那台机器的 SSH key 能读 .gitmodules 里全部 9 个仓库
+#      （bonder_series/icb3000/* 和 2006/platform_v2_product/* 两个 group）
+#    - 磁盘留够：全量构建 + 9 个 submodule 的工作区
+# ============================================================
+
+workflow:
+  rules:
+    # 唯一的入口：推送标签。push 一个分支时不会创建任何流水线。
+    - if: $CI_COMMIT_TAG
+    # 想在网页上手工试跑时，把下面这行取消注释（它会为一个分支创建流水线）
+    # - if: $CI_PIPELINE_SOURCE == "web"
+
+stages:
+  - release
+
+build_package:
+  stage: release
+
+  # 全量构建（6 个项目 + 组装 + verify）在一般开发机上要 20 分钟以上，
+  # 默认的 1 小时在慢机器上不够，失败原因只会显示 timeout，所以显式放宽。
+  timeout: 2h
+
+  variables:
+    # 脚本家族约定：1 = 结尾不要停在 "press any key"
+    _SCRIPT_NO_HOLD: "1"
+
+    # 0 = 完整历史。init_submodules 是按 submodule 记录的 SHA 拉取的，
+    # 浅克隆经常拉不到那些 SHA，表现为 submodule update 报 "fatal: reference is not a tree"。
+    GIT_DEPTH: "0"
+    GIT_SUBMODULE_DEPTH: "0"
+
+    # checkout 前把 .gitignore 里的东西一并清掉（build*/ output/ exe/），
+    # 保证每次都是干净构建。这是 runner 的默认值，写出来是为了别有人误改成 -ffd。
+    GIT_CLEAN_FLAGS: -ffdx
+
+  script:
+    # 单引号是必须的：YAML 双引号里 \u 是 Unicode 转义，
+    # 而 Windows 路径里 \u 后面跟的不是 4 位十六进制，配置文件会直接解析失败。
+    # 用 %CI_PROJECT_DIR% 而不是相对路径，避免依赖 runner 的当前目录。
+    - 'cmd /c "%CI_PROJECT_DIR%\engineering\scripts\init_update_build.bat"'
+
+  artifacts:
+    name: "1928-exe-$CI_COMMIT_TAG"
+    paths:
+      - exe/
+    expire_in: 90 days

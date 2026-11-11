@@ -1,0 +1,11 @@
+# 机器常数配置：分系统列表、数据路径、Schema 命名规则
+# 服务端启动时由 MC_Manager 加载，与 mw_config.yaml（ip/通讯）分离
+
+rootPath: mc_config/MachineConstants/          # 分系统数据根目录（相对配置根：cwd 或 PLATFORM_PATH）
+schemaPath: mc_config/MachineConstants/        # Schema 文件目录（同上）
+defaultPrefix: "MC_"                 # 激活文件名前缀（固定激活名 = 前缀 + 分系统名）
+serialNumLength: 4                   # 新建常数序号宽度（如 MC_0001）
+projectName: "1928"
+
+# 决定界面展示哪些分系统；每个分系统对应目录 {rootPath}/{d}/ 与 Schema {schemaPath}/MC_{d}_Schema.json
+subsystems: [WM]

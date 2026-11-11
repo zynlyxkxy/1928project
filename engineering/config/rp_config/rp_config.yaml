@@ -1,0 +1,16 @@
+# RP 报告服务业务配置文件
+# 与 mw_config.yaml 分离：mw_config.yaml（平台共享）只保留 middleware.rp 通讯段
+# （ip/port，与其它模块一致）；RP 业务配置（文件保存路径、数据库等）独立在本文件。
+# 服务端 RP_Manager 与 GUI ReportPathProvider 统一读取本文件。
+# （参照 MC 的 mc_config.yaml 模式）
+
+# ====== RP 业务配置（顶层） ======
+report_dir: rp_config/Report/       # 报告文件根目录（RP-001，相对/绝对路径均可，相对路径按配置根 cwd 或 PLATFORM_PATH 解析）
+plugin_dir: rp_config/Plug_In/      # 导出插件目录（RP-010，存放 .exe 转换插件）
+# 索引数据库（RP-009，MySQL 组件提供后启用；缺省/组件未提供时使用内存索引并自动重建）
+# db:
+#   host: 127.0.0.1
+#   port: 3306
+#   user: root
+#   password: ""
+#   database: report_db

@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "defaultTol": 2.0,
+  "rules": [
+    {
+      "id": "R001_HEAD_ALIGN",
+      "why": "键合头下压到对准相机承载台高度，且承载台在头正下方 -> 撞。头盘面=1053.83+ArmHead_Z，台顶=925.4+AlignStage_Z，即 ArmHead_Z-AlignStage_Z<=-128.4；X/Y 窗口=头气环 105.6 见方（world 心 -42.5,7.0）折算成轴坐标。数值来自 28module 3D 模型，多为占位待真机标定（TODO）。",
+      "tol": 5.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.X" } ], "lo": -52.8, "hi": 52.8 },
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.Y" } ], "lo": -46.8, "hi": 58.8 },
+        { "type": "axis", "terms": [ { "axis": "ArmHead_Z" }, { "axis": "AlignStage_Z", "coef": -1.0 } ], "hi": -128.4 }
+      ]
+    },
+    {
+      "id": "R002_HEAD_WAFER",
+      "why": "键合头压到晶圆/陶瓷面高度，且晶圆台在头正下方 -> 撞。1053.83+ArmHead_Z<=884.9（陶瓷面）-> ArmHead_Z<=-168.9；键合接触位 -167.4，仿真实测更深的碰撞阈约 -171.6，取 -168.9 为起点；X/Y=头气环 x[-95.3,10.3] y[-45.8,59.8] 与陶瓷面 Ø305 折算。",
+      "tol": 0.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.X" } ], "lo": -247.7, "hi": 162.9 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": -198.4, "hi": 212.4 },
+        { "type": "axis", "terms": [ { "axis": "ArmHead_Z" } ], "hi": -168.9 }
+      ]
+    },
+    {
+      "id": "R003_HEAD_FLIP",
+      "why": "翻转臂在交接位，且键合头压到翻转芯片背面高度 -> 撞。交接位 FA_X=-1242.35±10（transfers.json 交接窗口）；头盘面 1053.83+ArmHead_Z <= die 背面 982.9+FA_Z -> ArmHead_Z-FA_Z<=-70.93（交接标定 FA_Z=20 / ArmHead_Z=-50.93 正好落在边界上）。",
+      "tol": 5.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "FA_X" } ], "lo": -1252.35, "hi": -1232.35 },
+        { "type": "axis", "terms": [ { "axis": "ArmHead_Z" }, { "axis": "FA_Z", "coef": -1.0 } ], "hi": -70.93 }
+      ]
+    },
+    {
+      "id": "R004_FLIP_ALIGN",
+      "why": "翻转臂扫到对准台区域，且高度上够得着承载台 -> 撞。FA_X-AS_X<=-1101.5（对应仿真里 -1100 待机位撞承载台 2.4mm、改到 -1050 的那次修正）；高度：承载台底 894.6+AS_Z，翻转件顶 982.9+FA_Z -> FA_Z-AS_Z>=-88.3。Y 方向在 AS_Y 全行程内都重叠，恒成立，不写。",
+      "tol": 5.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "FA_X" }, { "axis": "AlignStage_XY.X", "coef": -1.0 } ], "hi": -1101.5 },
+        { "type": "axis", "terms": [ { "axis": "FA_Z" }, { "axis": "AlignStage_Z", "coef": -1.0 } ], "lo": -88.3 }
+      ]
+    },
+    {
+      "id": "R005_FLIP_WAFER",
+      "why": "翻转臂扫到晶圆台上方，且高度贴到晶圆面 -> 撞。翻转吸盘 x[1154.5,1245.2]+FA_X 与陶瓷面 x[-152.6,152.4]+WaferX -> FA_X-WaferX∈[-1397.8,-1002.1]；Y 重叠 WaferY∈[-189,207]；吸盘面 891.6+FA_Z <= 陶瓷顶 884.9+片厚 1.0 -> FA_Z<=-5.7（仿真实测 FA_Z=-5 扫掠撞晶圆台 Rz 盘 Epin 缺口）。",
+      "tol": 5.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "FA_X" }, { "axis": "WaferStage_XY.X", "coef": -1.0 } ], "lo": -1397.8, "hi": -1002.1 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": -189.0, "hi": 207.0 },
+        { "type": "axis", "terms": [ { "axis": "FA_Z" } ], "hi": -5.7 }
+      ]
+    },
+    {
+      "id": "R007_EPIN_VACUUM",
+      "why": "吸盘吸着晶圆时不许顶针动作（反之顶针顶起时不许吸真空）。顶针顶起=EPIN_Z>=8（缩回时低于陶瓷面约 11mm，行程 0~30，TODO 标定实际接触晶圆的高度）；吸附看 DO 目标值（IO 无中间态，写什么就是什么）。两条同时成立时既不许顶针再抬，也不许开/保持真空。",
+      "tol": 0.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 8.0 },
+        { "type": "io", "name": "AI_PLC_WT_WaferVac_PressureSwitch_oValue", "hi": -60 }
+      ]
+    },
+    {
+      "id": "R008_EPIN_ALIGN_P1",
+      "why": "顶针顶起时，对准台压在第 1 根针正上方 -> 撞。3 根针绕晶圆台中心 120° 等分、半径 144（针 Ø6，片压半径 7）：P1 偏置 (144,0)、P2 (-72,124.7)、P3 (-72,-124.7)；针心 world=(WaferX+off_x, WaferY+off_y) 与承载台 AABB（x[-138,53]+AS_X、y[-35,82]+AS_Y，模型占位 TODO 实测）重叠并按针外廓 7 加宽。Rz 只 ±1°（±2.5mm 漂移）由 tol 吃掉。与 P2/P3 一起改。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.X" }, { "axis": "WaferStage_XY.X", "coef": -1.0 } ], "lo": 84.0, "hi": 289.0 },
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.Y" }, { "axis": "WaferStage_XY.Y", "coef": -1.0 } ], "lo": -89.0, "hi": 42.0 }
+      ]
+    },
+    {
+      "id": "R008_EPIN_ALIGN_P2",
+      "why": "同 R008_EPIN_ALIGN_P1，第 2 根针（偏置 -72,124.7；与 P1/P3 一起改）。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.X" }, { "axis": "WaferStage_XY.X", "coef": -1.0 } ], "lo": -132.0, "hi": 73.0 },
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.Y" }, { "axis": "WaferStage_XY.Y", "coef": -1.0 } ], "lo": 35.7, "hi": 166.7 }
+      ]
+    },
+    {
+      "id": "R008_EPIN_ALIGN_P3",
+      "why": "同 R008_EPIN_ALIGN_P1，第 3 根针（偏置 -72,-124.7；与 P1/P2 一起改）。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.X" }, { "axis": "WaferStage_XY.X", "coef": -1.0 } ], "lo": -132.0, "hi": 73.0 },
+        { "type": "axis", "terms": [ { "axis": "AlignStage_XY.Y" }, { "axis": "WaferStage_XY.Y", "coef": -1.0 } ], "lo": -213.7, "hi": -82.7 }
+      ]
+    },
+    {
+      "id": "R009_EPIN_HEAD_P1",
+      "why": "顶针顶起时，键合头压在第 1 根针正上方 -> 撞。键合头 XY 固定：针心必须在头气环 x[-95.3,10.3] y[-45.8,59.8] 内按针外廓 7 外扩；高度：1053.83+ArmHead_Z <= 针尖 873.9+EPIN_Z -> ArmHead_Z-EPIN_Z<=-179.9（针尖缩回位 873.9）。与 P2/P3 一起改。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.X" } ], "lo": -246.3, "hi": -140.7 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": -52.8, "hi": 52.8 },
+        { "type": "axis", "terms": [ { "axis": "ArmHead_Z" }, { "axis": "EPIN_Z", "coef": -1.0 } ], "hi": -179.9 }
+      ]
+    },
+    {
+      "id": "R009_EPIN_HEAD_P2",
+      "why": "同 R009_EPIN_HEAD_P1，第 2 根针（与 P1/P3 一起改）。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.X" } ], "lo": -30.3, "hi": 75.3 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": -177.5, "hi": -71.9 },
+        { "type": "axis", "terms": [ { "axis": "ArmHead_Z" }, { "axis": "EPIN_Z", "coef": -1.0 } ], "hi": -179.9 }
+      ]
+    },
+    {
+      "id": "R009_EPIN_HEAD_P3",
+      "why": "同 R009_EPIN_HEAD_P1，第 3 根针（与 P1/P2 一起改）。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.X" } ], "lo": -30.3, "hi": 75.3 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": 71.9, "hi": 177.5 },
+        { "type": "axis", "terms": [ { "axis": "ArmHead_Z" }, { "axis": "EPIN_Z", "coef": -1.0 } ], "hi": -179.9 }
+      ]
+    },
+    {
+      "id": "R010_EPIN_FLIP_P1",
+      "why": "顶针顶起时，翻转臂压在第 1 根针正上方 -> 撞。翻转吸盘 x[1154.5,1245.2]+FA_X、y[-36.4,54.4]（Y 固定）：横向重叠 FA_X-WaferX∈[off_x-1238.2, off_x-1161.5]；高度：吸盘面 891.6+FA_Z <= 针尖 873.9+EPIN_Z -> FA_Z-EPIN_Z<=-17.7。与 P2/P3 一起改。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "FA_X" }, { "axis": "WaferStage_XY.X", "coef": -1.0 } ], "lo": -1094.2, "hi": -1017.5 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": -43.4, "hi": 61.4 },
+        { "type": "axis", "terms": [ { "axis": "FA_Z" }, { "axis": "EPIN_Z", "coef": -1.0 } ], "hi": -17.7 }
+      ]
+    },
+    {
+      "id": "R010_EPIN_FLIP_P2",
+      "why": "同 R010_EPIN_FLIP_P1，第 2 根针（与 P1/P3 一起改）。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "FA_X" }, { "axis": "WaferStage_XY.X", "coef": -1.0 } ], "lo": -1310.2, "hi": -1233.5 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": -168.1, "hi": -63.3 },
+        { "type": "axis", "terms": [ { "axis": "FA_Z" }, { "axis": "EPIN_Z", "coef": -1.0 } ], "hi": -17.7 }
+      ]
+    },
+    {
+      "id": "R010_EPIN_FLIP_P3",
+      "why": "同 R010_EPIN_FLIP_P1，第 3 根针（与 P1/P2 一起改）。",
+      "tol": 3.0,
+      "when": [
+        { "type": "axis", "terms": [ { "axis": "EPIN_Z" } ], "lo": 10.0 },
+        { "type": "axis", "terms": [ { "axis": "FA_X" }, { "axis": "WaferStage_XY.X", "coef": -1.0 } ], "lo": -1310.2, "hi": -1233.5 },
+        { "type": "axis", "terms": [ { "axis": "WaferStage_XY.Y" } ], "lo": 81.3, "hi": 186.1 },
+        { "type": "axis", "terms": [ { "axis": "FA_Z" }, { "axis": "EPIN_Z", "coef": -1.0 } ], "hi": -17.7 }
+      ]
+    }
+  ]
+}
